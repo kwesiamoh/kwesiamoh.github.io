@@ -24,7 +24,7 @@ environmental systems, energy sustainability, and computational modeling.
 
 ## Selected Projects
 - [CFD Fundamentals in MATLAB](https://github.com/kwesiamoh/cfd-fundamentals-matlab)
-- OpenFOAM Simulations
+- [OpenFOAM Simulations](https://github.com/kwesiamoh/openfoam-projects/)
 - Environmental & Energy Data Analysis in Python/R Studio
 
 📌 Currently seeking high-impact internships in energy, sustainability,
