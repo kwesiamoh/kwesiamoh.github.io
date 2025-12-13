@@ -1,32 +1,72 @@
-# Ernest Amoh
-### Environmental & Sustainability Engineering (M.Sc.)
+# Ernest Amoh 🌱
 
-Master’s student at the University of Stuttgart with a focus on
-environmental systems, energy sustainability, and computational modeling.
+**Environmental & Sustainability Engineering **  
+Master’s student at the University of Stuttgart | Focused on environmental systems, energy sustainability, and computational modeling.
 
----
-
-## Technical Focus
-- Computational Fluid Dynamics (MATLAB, OpenFOAM)
-- Environmental & Energy Systems Analysis
-- Data Cleaning, Analysis & Visualization (Python, R)
-- Scientific Computing
+![Banner](https://raw.githubusercontent.com/yourusername/yourrepo/main/images/banner.png)  
 
 ---
 
-## Interests
-- Energy sustainability & decarbonization
-- Water Quality
-- Air quality & environmental flows
-- Data-driven environmental decision-making
+## 💡 About Me
+Passionate about leveraging computational tools and data-driven insights to tackle energy, water, and environmental challenges. Skilled in simulation, analysis, and visualization for sustainable solutions.
 
 ---
 
-## Selected Projects
-- [CFD Fundamentals in MATLAB](https://github.com/kwesiamoh/cfd-fundamentals-matlab)
-- [OpenFOAM Simulations](https://github.com/kwesiamoh/openfoam-projects/)
-- Environmental & Energy Data Analysis in Python/R Studio
+## 🛠 Technical Skills
 
-📌 Currently seeking high-impact internships in energy, sustainability,
-and environmental engineering.
+| Category | Tools & Technologies |
+|----------|-------------------|
+| **Computational Modeling** | MATLAB, OpenFOAM, CFD Simulation |
+| **Data Science & Visualization** | Python (NumPy, Pandas, Matplotlib, Seaborn), R, R Studio |
+| **Scientific Computing** | Statistical Analysis, Modeling, Simulation |
+| **Other Tools** | Git & GitHub, Linux, LaTeX |
 
+**Badges:**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=matlab&logoColor=white)
+![OpenFOAM](https://img.shields.io/badge/OpenFOAM-009933?style=for-the-badge&logo=openfoam&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+
+---
+
+## 🔭 Current Interests
+- Energy sustainability & decarbonization  
+- Water quality & environmental flows  
+- Air quality modeling  
+- Data-driven environmental decision-making  
+
+---
+
+## 🚀 Selected Projects
+
+### CFD Fundamentals in MATLAB
+![CFD Project](https://github.com/yourusername/yourrepo/blob/main/images/cfd_project.png?raw=true)  
+[View Project Repository](https://github.com/kwesiamoh/cfd-fundamentals-matlab)  
+Simulated fluid dynamics scenarios to explore fundamental principles.
+
+### OpenFOAM Simulations
+![OpenFOAM Simulation](https://github.com/yourusername/yourrepo/blob/main/images/openfoam_project.png?raw=true)  
+[View Project Repository](https://github.com/kwesiamoh/openfoam-projects)  
+Developed environmental flow and energy system models using OpenFOAM.
+
+### Environmental & Energy Data Analysis
+![Data Analysis](https://github.com/yourusername/yourrepo/blob/main/images/data_analysis_project.png?raw=true)  
+[View Project Repository](https://github.com/yourusername/Energy-Data-Analysis)  
+Cleaned, analyzed, and visualized datasets in Python and R to generate actionable insights.
+
+---
+
+## 📌 Career Focus
+Currently seeking **high-impact internships** in energy, sustainability, and environmental engineering. Open to collaborative projects in simulation, environmental data analysis, and renewable energy solutions.
+
+---
+
+## 📫 Connect with Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yourprofile)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)
+
+---
+
+## 📊 GitHub Stats
+![Ernest's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=dark)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=dark)
