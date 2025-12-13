@@ -23,7 +23,7 @@ environmental systems, energy sustainability, and computational modeling.
 ---
 
 ## Selected Projects
-- CFD Fundamentals in MATLAB
+- [CFD Fundamentals in MATLAB](https://github.com/kwesiamoh/cfd-fundamentals-matlab)
 - OpenFOAM Simulations
 - Environmental & Energy Data Analysis in Python/R Studio
 
