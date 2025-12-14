@@ -1,9 +1,7 @@
 # Ernest Amoh 🌱
 
-**Environmental & Sustainability Engineering **  
+**Environmental & Sustainability Engineering (M.Sc.)**  
 Master’s student at the University of Stuttgart | Focused on environmental systems, energy sustainability, and computational modeling.
-
-![Banner](https://raw.githubusercontent.com/yourusername/yourrepo/main/images/banner.png)  
 
 ---
 
@@ -30,27 +28,24 @@ Passionate about leveraging computational tools and data-driven insights to tack
 ---
 
 ## 🔭 Current Interests
-- Energy sustainability & decarbonization  
-- Water quality & environmental flows  
-- Air quality modeling  
-- Data-driven environmental decision-making  
+- ⚡ Energy sustainability & decarbonization  
+- 💧 Water quality & environmental flows  
+- 🌬 Air quality modeling  
+- 📊 Data-driven environmental decision-making  
 
 ---
 
 ## 🚀 Selected Projects
 
-### CFD Fundamentals in MATLAB
-![CFD Project](https://github.com/yourusername/yourrepo/blob/main/images/cfd_project.png?raw=true)  
+### 🧪 CFD Fundamentals in MATLAB
 [View Project Repository](https://github.com/kwesiamoh/cfd-fundamentals-matlab)  
 Simulated fluid dynamics scenarios to explore fundamental principles.
 
-### OpenFOAM Simulations
-![OpenFOAM Simulation](https://github.com/yourusername/yourrepo/blob/main/images/openfoam_project.png?raw=true)  
+### 🌊 OpenFOAM Simulations
 [View Project Repository](https://github.com/kwesiamoh/openfoam-projects)  
 Developed environmental flow and energy system models using OpenFOAM.
 
-### Environmental & Energy Data Analysis
-![Data Analysis](https://github.com/yourusername/yourrepo/blob/main/images/data_analysis_project.png?raw=true)  
+### 📈 Environmental & Energy Data Analysis
 [View Project Repository](https://github.com/yourusername/Energy-Data-Analysis)  
 Cleaned, analyzed, and visualized datasets in Python and R to generate actionable insights.
 
