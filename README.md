@@ -44,7 +44,7 @@ Simulated fluid dynamics scenarios to explore fundamental principles.
 Developed environmental flow and energy system models using OpenFOAM.
 
 ### 📈 Environmental & Energy Data Analysis
-[View Project Repository](https://github.com/yourusername/Energy-Data-Analysis)  
+[View Project Repository](https://github.com/kwesiamoh/Data-Analysis)  
 Cleaned, analyzed, and visualized datasets in Python and R to generate actionable insights.
 
 ---
