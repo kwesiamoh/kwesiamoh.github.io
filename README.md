@@ -1,4 +1,4 @@
-**Environmental & Sustainability Engineering (M.Sc.)**  
+**Environmental & Sustainability Engineering **  
 Master’s student at the University of Stuttgart | Focused on environmental systems, energy sustainability, and computational modeling.
 
 ---
