@@ -15,7 +15,7 @@ Passionate about leveraging computational tools and data-driven insights to tack
 | **Computational Modeling** | MATLAB, OpenFOAM, CFD Simulation |
 | **Data Science & Visualization** | Python (NumPy, Pandas, Matplotlib, Seaborn), R, R Studio |
 | **Scientific Computing** | Statistical Analysis, Modeling, Simulation |
-| **Other Tools** | Git & GitHub, Linux, LaTeX |
+| **Other Tools** | Git & GitHub, Linux, LaTeX, GIS |
 
 **Badges:**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
