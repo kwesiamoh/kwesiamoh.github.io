@@ -50,7 +50,7 @@ Cleaned, analyzed, and visualized datasets in Python and R to generate actionabl
 ---
 
 ## 📌 Career Focus
-Currently seeking **high-impact internships** in energy, sustainability, and environmental engineering. Open to collaborative projects in simulation, environmental data analysis, and renewable energy solutions.
+Energy, Sustainability, and Environmental Engineering. Open to collaborative projects in simulation, environmental data analysis, and renewable energy solutions.
 
 ---
 
