@@ -27,10 +27,11 @@ Skilled in simulation, analysis, and visualization for sustainable solutions, wi
 ---
 
 ## 🔭 Current Interests
-- ⚡ Energy sustainability & decarbonization  
-- 💧 Water quality & environmental flows  
-- 🌬 Air quality modeling  
-- 📊 Data-driven environmental decision-making  
+-⚙️ Process modeling and simulation
+-⚡ Energy sustainability and decarbonization
+-💧 Water quality and environmental systems
+-🌬 Air quality modeling and simulation
+-📊 Data-driven environmental decision-making  
 
 ---
 
