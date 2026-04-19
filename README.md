@@ -4,7 +4,9 @@ Master’s student at the University of Stuttgart | Focused on environmental sys
 ---
 
 ## 💡 About Me
-Passionate about leveraging computational tools and data-driven insights to tackle energy, water, and environmental challenges. Skilled in simulation, analysis, and visualization for sustainable solutions.
+Passionate about leveraging computational tools and data-driven insights to tackle energy, water, and environmental challenges. Particularly interested in environmental systems, digital process modeling, and sustainability initiatives.
+
+Skilled in simulation, analysis, and visualization for sustainable solutions, with experience in tools such as Aspen Plus, MATLAB, and OpenFOAM for modeling and optimizing complex processes.
 
 ---
 
@@ -12,7 +14,7 @@ Passionate about leveraging computational tools and data-driven insights to tack
 
 | Category | Tools & Technologies |
 |----------|-------------------|
-| **Computational Modeling** | MATLAB, OpenFOAM, CFD Simulation |
+| **Process Simulation & Modeling** | Aspen Plus, MATLAB, OpenFOAM, CFD Simulation |
 | **Data Science & Visualization** | Python (NumPy, Pandas, Matplotlib, Seaborn), R, R Studio |
 | **Scientific Computing** | Statistical Analysis, Modeling, Simulation |
 | **Other Tools** | Git & GitHub, Linux, LaTeX, GIS |
