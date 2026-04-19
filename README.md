@@ -16,7 +16,6 @@ Skilled in simulation, analysis, and visualization for sustainable solutions, wi
 |----------|-------------------|
 | **Process Simulation & Modeling** | Aspen Plus, MATLAB, OpenFOAM, CFD Simulation |
 | **Data Science & Visualization** | Python (NumPy, Pandas, Matplotlib, Seaborn), R, R Studio |
-| **Scientific Computing** | Statistical Analysis, Modeling, Simulation |
 | **Other Tools** | Git & GitHub, Linux, LaTeX, GIS |
 
 **Badges:**  
