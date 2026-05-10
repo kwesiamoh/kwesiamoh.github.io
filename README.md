@@ -4,9 +4,7 @@
 ---
 
 ## 💡 Professional Summary
-I am a Process & Environmental Engineer specializing in the digitalization of industrial systems. My work focuses on leveraging **Computational Fluid Dynamics (CFD)**, **Process Simulation**, and **Machine Learning** to optimize energy efficiency and decarbonize infrastructure. 
-
-Currently, I support industrial-scale CO₂ capture and syngas research at the **Institute of Energy Process Engineering (IED)**.
+I am a Process & Environmental Engineer specializing in the digitalization of industrial systems. My work focuses on leveraging **Computational Fluid Dynamics (CFD)**, **Process Simulation**, and **Machine Learning** to optimize energy efficiency and decarbonize infrastructure. Currently, I support industrial-scale CO₂ capture and syngas research at the **Institute of Energy Process Engineering (IED)**. My main interest lies in bridging physical systems with AI, especially in areas such as energy systems, decarbonization, and digital twins. I am particularly interested in roles where engineering knowledge and data-driven methods are combined to solve real-world problems.
 
 ---
 
