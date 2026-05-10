@@ -21,6 +21,12 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 ![XGBoost](https://img.shields.io/badge/XGBoost-2980B9?style=for-the-badge&logo=XGBoost&logoColor=white)
 ![AspenPlus](https://img.shields.io/badge/Aspen_Plus-0076A8?style=for-the-badge&logo=astronomy&logoColor=white)
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-009933?style=for-the-badge&logo=openfoam&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-FF6F00?style=for-the-badge&logo=mathworks&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
 
 ---
 
