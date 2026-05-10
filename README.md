@@ -28,7 +28,7 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 **[View Project Repository](https://github.com/kwesiamoh/energy-forecast)** An end-to-end time-series pipeline predicting electricity demand and real-time carbon intensity ($gCO_2eq/kWh$) for the German power grid.
 
 * **Key Engineering:** Built a robust data pipeline integrating SMARD, OPSD, and Meteostat weather data (~80k rows).
-* **The "Showdown":** Benchmarked tuned **XGBoost** recursive models against **Amazon Chronos-T5** foundation models.
+* **Model Comparison:** Benchmarked tuned **XGBoost** recursive models against **Amazon Chronos-T5** foundation models.
 * **Outcome:** Proved that zero-shot foundation models stabilize 24-hour forecast horizons where traditional autoregressive models suffer from error compounding.
 * **Skills:** Feature Engineering (Physical Composites), Foundation Models, Data Auditing (X-Ray Heatmaps), and Multi-Horizon Forecasting.
 
