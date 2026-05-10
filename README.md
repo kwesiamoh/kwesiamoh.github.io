@@ -14,8 +14,8 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 |----------|-------------------|
 | **Data Science & ML** | Python (Pandas, NumPy), XGBoost, **Amazon Chronos (Foundation Models)**, R, SQL |
 | **Process Engineering** | **Aspen Plus**, **OpenFOAM (CFD)**, MATLAB, Thermo- & Fluid Dynamics |
-| **Data Engineering** | Time-Series Pipelines, API Integration, Data Auditing/Imputation |
-| **Visualization** | Matplotlib, Seaborn, Scientific Plotting (LaTeX/Stix formatting) |
+| **Data Engineering** | Time-Series , API Integration, Data Auditing/Imputation |
+| **Visualization** | Matplotlib, Seaborn, QGIS|
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-2980B9?style=for-the-badge&logo=XGBoost&logoColor=white)
