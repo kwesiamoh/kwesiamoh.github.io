@@ -19,7 +19,7 @@ Currently, I support industrial-scale CO₂ capture and syngas research at the *
 | **Data Engineering** | Time-Series Pipelines, API Integration, Data Auditing/Imputation |
 | **Visualization** | Matplotlib, Seaborn, Scientific Plotting (LaTeX/Stix formatting) |
 
-**Modern AI & Data Badges:** ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-2980B9?style=for-the-badge&logo=XGBoost&logoColor=white)
 ![AspenPlus](https://img.shields.io/badge/Aspen_Plus-0076A8?style=for-the-badge&logo=astronomy&logoColor=white)
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-009933?style=for-the-badge&logo=openfoam&logoColor=white)
