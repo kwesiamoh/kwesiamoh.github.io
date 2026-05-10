@@ -1,63 +1,61 @@
-**Environmental & Process Engineering **  
-Master’s student at the University of Stuttgart | Focused on environmental systems, energy sustainability, and computational modeling.
+# 🌍 Ernest Amoh | Environmental & Process Engineering  
+**Master’s Candidate at the University of Stuttgart** | Bridging Process Physics with AI & Foundation Models.
 
 ---
 
-## 💡 About Me
-Passionate about leveraging computational tools and data-driven insights to tackle energy, water, and environmental challenges. Particularly interested in environmental systems, digital process modeling, and sustainability initiatives.
+## 💡 Professional Summary
+I am a Process & Environmental Engineer specializing in the digitalization of industrial systems. My work focuses on leveraging **Computational Fluid Dynamics (CFD)**, **Process Simulation**, and **Machine Learning** to optimize energy efficiency and decarbonize infrastructure. 
 
-Skilled in simulation, analysis, and visualization for sustainable solutions, with experience in tools such as Aspen Plus, MATLAB, and OpenFOAM for modeling and optimizing complex processes.
+Currently, I support industrial-scale CO₂ capture and syngas research at the **Institute of Energy Process Engineering (IED)**.
 
 ---
 
-## 🛠 Technical Skills
+## 🛠 Technical Stack
 
 | Category | Tools & Technologies |
 |----------|-------------------|
-| **Process Simulation & Modeling** | Aspen Plus, MATLAB, OpenFOAM, CFD Simulation |
-| **Data Science & Visualization** | Python (NumPy, Pandas, Matplotlib, Seaborn), R, R Studio |
-| **Other Tools** | Git & GitHub, Linux, LaTeX, GIS |
+| **Data Science & ML** | Python (Pandas, NumPy), XGBoost, **Amazon Chronos (Foundation Models)**, R, SQL |
+| **Process Engineering** | **Aspen Plus**, **OpenFOAM (CFD)**, MATLAB, Thermo- & Fluid Dynamics |
+| **Data Engineering** | Time-Series Pipelines, API Integration, Data Auditing/Imputation |
+| **Visualization** | Matplotlib, Seaborn, Scientific Plotting (LaTeX/Stix formatting) |
 
-**Badges:**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=matlab&logoColor=white)
+**Modern AI & Data Badges:** ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-2980B9?style=for-the-badge&logo=XGBoost&logoColor=white)
+![AspenPlus](https://img.shields.io/badge/Aspen_Plus-0076A8?style=for-the-badge&logo=astronomy&logoColor=white)
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-009933?style=for-the-badge&logo=openfoam&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 
 ---
 
-## 🔭 Current Interests
--⚙️ Process modeling and simulation
--⚡ Energy sustainability and decarbonization
--💧 Water quality and environmental systems
--🌬 Air quality modeling and simulation
--📊 Data-driven environmental decision-making  
+## 🌟 Featured Project: German Energy Grid & Carbon Intensity Forecasting
+**[View Project Repository](https://github.com/kwesiamoh/energy-forecast)** An end-to-end time-series pipeline predicting electricity demand and real-time carbon intensity ($gCO_2eq/kWh$) for the German power grid.
+
+* **Key Engineering:** Built a robust data pipeline integrating SMARD, OPSD, and Meteostat weather data (~80k rows).
+* **The "Showdown":** Benchmarked tuned **XGBoost** recursive models against **Amazon Chronos-T5** foundation models.
+* **Outcome:** Proved that zero-shot foundation models stabilize 24-hour forecast horizons where traditional autoregressive models suffer from error compounding.
+* **Skills:** Feature Engineering (Physical Composites), Foundation Models, Data Auditing (X-Ray Heatmaps), and Multi-Horizon Forecasting.
 
 ---
 
-## 🚀 Selected Projects
+## 🚀 Other Selected Projects
 
 ### 🧪 CFD Fundamentals in MATLAB
-[View Project Repository](https://github.com/kwesiamoh/cfd-fundamentals-matlab)  
-Simulated fluid dynamics scenarios to explore fundamental principles.
-
-### 🌊 OpenFOAM Simulations
-[View Project Repository](https://github.com/kwesiamoh/openfoam-projects)  
-Developed environmental flow and energy system models using OpenFOAM.
+[View Repository](https://github.com/kwesiamoh/cfd-fundamentals-matlab)  
+Numerical simulations exploring fundamental fluid dynamics principles.
 
 ### 📈 Environmental & Energy Data Analysis
-[View Project Repository](https://github.com/kwesiamoh/Data-Analysis)  
-Cleaned, analyzed, and visualized datasets in Python and R to generate actionable insights.
+[View Repository](https://github.com/kwesiamoh/Data-Analysis)  
+Statistical analysis of environmental datasets to extract actionable operational insights.
 
 ---
 
-## 📌 Career Focus
-Energy, Sustainability, and Environmental Engineering. Open to collaborative projects in simulation, environmental data analysis, and renewable energy solutions.
+## 🔭 Current Focus & Interests
+- **⚙️ Digital Twins:** Coupling Aspen Plus and OpenFOAM with ML surrogate models.
+- **⚡ Decarbonization:** Real-time carbon intensity forecasting for industrial load-shifting.
+- **🛡 Process Safety:** Using data-driven monitoring to reduce unplanned downtime and incident frequency.
+- **🤖 Time-Series AI:** Scaling Foundation Models for critical infrastructure.
 
 ---
 
 ## 📫 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ernestamoh/)  
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amohernest@gmail.com)
-
----
