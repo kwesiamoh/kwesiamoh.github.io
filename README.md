@@ -27,6 +27,8 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-FF6F00?style=for-the-badge&logo=mathworks&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Amazon Chronos](https://img.shields.io/badge/Chronos--T5-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
 
