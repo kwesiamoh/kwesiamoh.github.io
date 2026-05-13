@@ -29,6 +29,10 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Amazon Chronos](https://img.shields.io/badge/Chronos--T5-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![DigitalTwin](https://img.shields.io/badge/Digital_Twin-0A192F?style=for-the-badge&logo=databricks&logoColor=white)
+![Thermodynamics](https://img.shields.io/badge/Thermodynamics-006699?style=for-the-badge)
+![PhysicsInformedAI](https://img.shields.io/badge/Physics--Informed_AI-5C2D91?style=for-the-badge)
 
 ---
 
@@ -39,6 +43,19 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 * **Model Comparison:** Benchmarked tuned **XGBoost** recursive models against **Amazon Chronos-T5** foundation models.
 * **Outcome:** Proved that zero-shot foundation models stabilize 24-hour forecast horizons where traditional autoregressive models suffer from error compounding.
 * **Skills:** Feature Engineering (Physical Composites), Foundation Models, Data Auditing (X-Ray Heatmaps), and Multi-Horizon Forecasting.
+
+## 🌟 Featured Project: Digital Twin Soft-Sensor for Gas Turbine Emission Monitoring
+
+**[View Project Repository](https://github.com/kwesiamoh/gas-turbine-digital-twin)**  
+A Physics-Informed AI Digital Twin for real-time prediction of gas turbine emissions using thermodynamic feature engineering, uncertainty quantification, and hybrid machine learning models.
+
+* **Physics + AI Integration:** Developed a **Physics-Informed Neural Network (PINN)** combining thermodynamic constraints with data-driven learning for physically consistent emission prediction.
+* **Soft-Sensor Development:** Built a virtual emissions monitoring system capable of estimating **CO** and **NOx** emissions from standard turbine operational data without expensive high-temperature sensors.
+* **Uncertainty Quantification:** Implemented **MC Dropout** to generate confidence-aware predictions and identify high-risk operating conditions in real time.
+* **Hybrid Modeling:** Benchmarked **XGBoost** against PINN architectures to evaluate predictive performance and physical generalization.
+* **Digital Twin Dashboard:** Designed a real-time **Streamlit** monitoring dashboard with live uncertainty bands, alarm thresholds, and operational visualization.
+* **Outcome:** Demonstrated reliable prediction of turbine emission trends while highlighting operational regions where uncertainty calibration and nonlinear combustion behavior require further optimization.
+* **Skills:** Physics-Informed Machine Learning, Digital Twins, Thermodynamics, Uncertainty Quantification, XGBoost, PyTorch, Streamlit, Industrial AI.
 
 ---
 
