@@ -45,9 +45,6 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 | **Approach** | Built an end-to-end forecasting pipeline integrating SMARD, OPSD, and Meteostat weather data (~80k rows). Engineered physically meaningful composite features capturing temperature-driven demand shifts, weekday consumption cycles, and seasonal generation patterns. Benchmarked a tuned **XGBoost** recursive forecaster against **Amazon Chronos-T5**, evaluating how a zero-shot time-series foundation model behaves under real grid dynamics without task-specific retraining. |
 | **Key Insight** | The comparison revealed a structural difference between the models. Recursive XGBoost forecasts gradually diverged over longer horizons, while Chronos-T5 maintained smoother and more stable 24-hour trajectories. The results suggest that foundation models may encode broader temporal representations that generalize more effectively under changing operating conditions, particularly in systems where weather and human behavior interact nonlinearly. |
 | **Engineering Outcome** | Produced a modular forecasting workflow capable of integrating heterogeneous energy and weather streams into a deployable prediction pipeline. The framework can be adapted to new regions or grid configurations with minimal re-engineering, making it relevant for both operational forecasting and future research into foundation-model-based energy systems. |
-
-**Skills:** Time-Series Forecasting · Foundation Models · XGBoost · Feature Engineering (Physical Composites) · Multi-Horizon Prediction · Data Auditing · Energy Systems Analytics · Pipeline Design
-
 ---
 
 ### 🔧 Digital Twin Soft-Sensor for Gas Turbine Emission Monitoring
@@ -59,8 +56,6 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 | **Approach** | Developed a Digital Twin soft-sensor using a **Physics-Informed Neural Network (PINN)** trained on operational turbine data and thermodynamic feature representations. Instead of relying purely on statistical fitting, the model incorporates combustion and energy-balance constraints directly into the optimization objective: $\mathcal{L} = \mathcal{L}_{\text{data}} + \lambda \mathcal{L}_{\text{physics}}$. This allows the network to learn emission behavior while remaining anchored to physically plausible turbine dynamics. To quantify prediction reliability, **MC Dropout** was applied during inference, producing uncertainty intervals alongside every emission estimate. |
 | **Key Insight** | The residual and calibration analyses exposed an important operational pattern. The model remained highly stable during normal low-emission operation, but uncertainty expanded significantly during high-emission combustion regimes. Rather than hiding this behavior, the system surfaces it explicitly, turning uncertainty itself into an operational signal for identifying unstable turbine states. |
 | **Engineering Outcome** | Built a fully interactive **Streamlit** dashboard that streams live predictions, uncertainty bands, and alarm thresholds in real time. The result is a deployable virtual sensing framework capable of supplementing or partially replacing physical emission instrumentation while giving operators visibility into both predicted emissions and model confidence. |
-
-**Skills:** Physics-Informed Neural Networks · Digital Twins · Thermodynamics · Uncertainty Quantification · MC Dropout · XGBoost · PyTorch · Streamlit · Industrial ML · Surrogate Modeling
 ---
 
 ## 🚀 Other Selected Projects
