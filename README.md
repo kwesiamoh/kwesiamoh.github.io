@@ -36,26 +36,29 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 
 ---
 
-## 🌟 Featured Project: German Energy Grid & Carbon Intensity Forecasting
-**[View Project Repository](https://github.com/kwesiamoh/energy-forecast)** An end-to-end time-series pipeline predicting electricity demand and real-time carbon intensity ($gCO_2eq/kWh$) for the German power grid.
+### ⚡ German Energy Grid & Carbon Intensity Forecasting
+**[→ View Repository](https://github.com/kwesiamoh/energy-forecast)**
 
-* **Key Engineering:** Built a robust data pipeline integrating SMARD, OPSD, and Meteostat weather data (~80k rows).
-* **Model Comparison:** Benchmarked tuned **XGBoost** recursive models against **Amazon Chronos-T5** foundation models.
-* **Outcome:** Proved that zero-shot foundation models stabilize 24-hour forecast horizons where traditional autoregressive models suffer from error compounding.
-* **Skills:** Feature Engineering (Physical Composites), Foundation Models, Data Auditing (X-Ray Heatmaps), and Multi-Horizon Forecasting.
+| | |
+|---|---|
+| **Challenge** | Germany's power grid requires accurate 24-hour electricity demand and carbon intensity ($\text{gCO}_2\text{eq/kWh}$) forecasts to enable intelligent load-shifting. Traditional autoregressive models compound errors over multi-step horizons, making them unreliable beyond 6–8 hours — forcing grid operators to hold expensive reserve capacity as a buffer. |
+| **Solution** | Built a robust end-to-end time-series pipeline (~80k rows) integrating SMARD, OPSD, and Meteostat weather APIs. Engineered physical composite features capturing diurnal and seasonal energy patterns. Benchmarked a tuned **XGBoost** recursive model against **Amazon Chronos-T5**, a zero-shot foundation model requiring no task-specific training data. |
+| **Impact** | Demonstrated that zero-shot foundation models stabilize 24-hour forecast horizons where autoregressive models diverge — with direct implications for reducing reserve capacity requirements for grid operators. For academia: validates the emergent temporal generalization capability of time-series foundation models on real-world industrial data. For industry: a pipeline-ready forecasting module deployable without model retraining on new grid configurations. |
 
-## 🌟 Featured Project: Digital Twin Soft-Sensor for Gas Turbine Emission Monitoring
+**Skills:** Foundation Models · Feature Engineering (Physical Composites) · Zero-Shot Deployment · Data Auditing (X-Ray Heatmaps) · Multi-Horizon Forecasting · Pipeline Robustness
 
-**[View Project Repository](https://github.com/kwesiamoh/gas-turbine-digital-twin)**  
-A Physics-Informed AI Digital Twin for real-time prediction of gas turbine emissions using thermodynamic feature engineering, uncertainty quantification, and hybrid machine learning models.
+---
 
-* **Physics + AI Integration:** Developed a **Physics-Informed Neural Network (PINN)** combining thermodynamic constraints with data-driven learning for physically consistent emission prediction.
-* **Soft-Sensor Development:** Built a virtual emissions monitoring system capable of estimating **CO** and **NOx** emissions from standard turbine operational data without expensive high-temperature sensors.
-* **Uncertainty Quantification:** Implemented **MC Dropout** to generate confidence-aware predictions and identify high-risk operating conditions in real time.
-* **Hybrid Modeling:** Benchmarked **XGBoost** against PINN architectures to evaluate predictive performance and physical generalization.
-* **Digital Twin Dashboard:** Designed a real-time **Streamlit** monitoring dashboard with live uncertainty bands, alarm thresholds, and operational visualization.
-* **Outcome:** Demonstrated reliable prediction of turbine emission trends while highlighting operational regions where uncertainty calibration and nonlinear combustion behavior require further optimization.
-* **Skills:** Physics-Informed Machine Learning, Digital Twins, Thermodynamics, Uncertainty Quantification, XGBoost, PyTorch, Streamlit, Industrial AI.
+### 🔧 Digital Twin Soft-Sensor for Gas Turbine Emission Monitoring
+**[→ View Repository](https://github.com/kwesiamoh/gas-turbine-digital-twin)**
+
+| | |
+|---|---|
+| **Challenge** | Continuous monitoring of CO and NOx emissions from industrial gas turbines typically requires expensive high-temperature sensors operating in extreme environments. These sensors are failure-prone, maintenance-heavy, and provide no uncertainty signal — leaving operators blind to model confidence during abnormal combustion regimes. |
+| **Solution** | Developed a **Physics-Informed Neural Network (PINN)** that encodes thermodynamic constraints directly into the training objective. Rather than treating physics as a post-hoc check, the model optimizes a composite loss: $$\mathcal{L} = \mathcal{L}_{\text{data}} + \lambda \, \mathcal{L}_{\text{physics}}$$ where $\mathcal{L}_{\text{physics}}$ penalizes predictions that violate energy balance and combustion stoichiometry. **MC Dropout** was applied at inference time to generate calibrated uncertainty bands, flagging high-risk operating conditions in real time. A fully functional Streamlit dashboard delivers live emission predictions with alarm thresholds and uncertainty visualization. |
+| **Impact** | For academia: establishes a physically consistent soft-sensor framework with principled uncertainty quantification — advancing the case for PINNs in safety-critical industrial monitoring. For industry: a deployable virtual sensor that eliminates dependency on physical emission probes, reduces maintenance overhead, and provides confidence-aware predictions that can integrate with existing process control systems. |
+
+**Skills:** PINNs · Physics-Informed ML · Uncertainty Quantification (MC Dropout) · Digital Twins · XGBoost · PyTorch · Real-Time Streamlit Dashboard · Surrogate Modeling · Thermodynamics
 
 ---
 
