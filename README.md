@@ -36,16 +36,15 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 
 ---
 # 🌟 Featured Projects
-
 ### ⚡ German Energy Grid & Carbon Intensity Forecasting
 **[→ View Repository](https://github.com/kwesiamoh/energy-forecast)**
 
 | | |
 |---|---|
-| **Problem Context** | Electricity demand on the German grid rises and falls with weather, industrial activity, and human behavior. Forecasting those fluctuations accurately — alongside real-time carbon intensity ($\text{gCO}_2\text{eq/kWh}$) — is essential for intelligent load-shifting and lower-emission energy consumption. The difficulty is temporal drift: traditional recursive forecasting models accumulate error with every prediction step, causing forecast stability to deteriorate rapidly beyond short horizons. |
+| **Problem Context** | Electricity demand on the German grid rises and falls with weather, industrial activity, and human behavior. Forecasting those fluctuations accurately, alongside real-time carbon intensity ($\text{gCO}_2\text{eq/kWh}$), is essential for intelligent load-shifting and lower-emission energy consumption. The main difficulty is temporal drift. Traditional recursive forecasting models accumulate error with every prediction step, causing forecast stability to deteriorate rapidly beyond short horizons. |
 | **Approach** | Built an end-to-end forecasting pipeline integrating SMARD, OPSD, and Meteostat weather data (~80k rows). Engineered physically meaningful composite features capturing temperature-driven demand shifts, weekday consumption cycles, and seasonal generation patterns. Benchmarked a tuned **XGBoost** recursive forecaster against **Amazon Chronos-T5**, evaluating how a zero-shot time-series foundation model behaves under real grid dynamics without task-specific retraining. |
-| **Key Insight** | The comparison revealed a structural difference between the models: while recursive XGBoost forecasts gradually diverged over longer horizons, Chronos-T5 maintained noticeably smoother and more stable 24-hour trajectories. The result suggests that foundation models may encode broader temporal representations that generalize more effectively under changing operating conditions — particularly in systems where weather and human behavior interact nonlinearly. |
-| **Engineering Outcome** | Produced a modular forecasting workflow capable of integrating heterogeneous energy and weather streams into a deployable prediction pipeline. The framework can be adapted to new regions or grid configurations with minimal re-engineering, making it relevant both for operational forecasting and future research into foundation-model-based energy systems. |
+| **Key Insight** | The comparison revealed a structural difference between the models. Recursive XGBoost forecasts gradually diverged over longer horizons, while Chronos-T5 maintained smoother and more stable 24-hour trajectories. The results suggest that foundation models may encode broader temporal representations that generalize more effectively under changing operating conditions, particularly in systems where weather and human behavior interact nonlinearly. |
+| **Engineering Outcome** | Produced a modular forecasting workflow capable of integrating heterogeneous energy and weather streams into a deployable prediction pipeline. The framework can be adapted to new regions or grid configurations with minimal re-engineering, making it relevant for both operational forecasting and future research into foundation-model-based energy systems. |
 
 **Skills:** Time-Series Forecasting · Foundation Models · XGBoost · Feature Engineering (Physical Composites) · Multi-Horizon Prediction · Data Auditing · Energy Systems Analytics · Pipeline Design
 
@@ -58,11 +57,10 @@ I am a Process & Environmental Engineer specializing in the digitalization of in
 |---|---|
 | **Problem Context** | Industrial gas turbines operate under extreme thermal conditions where direct measurement of CO and NOx emissions is difficult, expensive, and operationally fragile. Physical emission probes degrade over time, require frequent calibration, and provide little insight into how trustworthy a reading actually is during unstable combustion events. |
 | **Approach** | Developed a Digital Twin soft-sensor using a **Physics-Informed Neural Network (PINN)** trained on operational turbine data and thermodynamic feature representations. Instead of relying purely on statistical fitting, the model incorporates combustion and energy-balance constraints directly into the optimization objective: $$\mathcal{L} = \mathcal{L}_{\text{data}} + \lambda \mathcal{L}_{\text{physics}}$$ This allows the network to learn emission behavior while remaining anchored to physically plausible turbine dynamics. To quantify prediction reliability, **MC Dropout** was applied during inference, producing uncertainty intervals alongside every emission estimate. |
-| **Key Insight** | The residual and calibration analyses exposed an important operational pattern: the model remained highly stable during normal low-emission operation, but uncertainty expanded significantly during high-emission combustion regimes. Rather than hiding this behavior, the system surfaces it explicitly — turning uncertainty itself into an operational signal for identifying unstable turbine states. |
+| **Key Insight** | The residual and calibration analyses exposed an important operational pattern. The model remained highly stable during normal low-emission operation, but uncertainty expanded significantly during high-emission combustion regimes. Rather than hiding this behavior, the system surfaces it explicitly, turning uncertainty itself into an operational signal for identifying unstable turbine states. |
 | **Engineering Outcome** | Built a fully interactive **Streamlit** dashboard that streams live predictions, uncertainty bands, and alarm thresholds in real time. The result is a deployable virtual sensing framework capable of supplementing or partially replacing physical emission instrumentation while giving operators visibility into both predicted emissions and model confidence. |
 
 **Skills:** Physics-Informed Neural Networks · Digital Twins · Thermodynamics · Uncertainty Quantification · MC Dropout · XGBoost · PyTorch · Streamlit · Industrial ML · Surrogate Modeling
-
 ---
 
 ## 🚀 Other Selected Projects
