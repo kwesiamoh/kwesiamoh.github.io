@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ernest Amoh | Process &amp; Environmental Engineer // AI Systems</title>
+  <title>Ernest Amoh | Process, Environmental &amp; Energy Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap"
@@ -39,9 +39,7 @@
       --radius2: 12px;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       background: var(--bg);
@@ -52,7 +50,6 @@
       overflow-x: hidden;
     }
 
-    /* ── GRID LINES BACKGROUND ── */
     body::before {
       content: '';
       position: fixed;
@@ -65,12 +62,9 @@
       z-index: 0;
     }
 
-    /* ── NAV ── */
     nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       z-index: 100;
       display: flex;
       justify-content: space-between;
@@ -105,11 +99,8 @@
       transition: color 0.2s;
     }
 
-    .nav-links a:hover {
-      color: var(--text);
-    }
+    .nav-links a:hover { color: var(--text); }
 
-    /* ── SECTIONS ── */
     section {
       position: relative;
       z-index: 1;
@@ -118,7 +109,6 @@
       padding: 6rem 2.5rem;
     }
 
-    /* ── HERO ── */
     #hero {
       min-height: 100vh;
       display: flex;
@@ -219,40 +209,6 @@
       background: var(--surface);
     }
 
-    .hero-equation {
-      margin-top: 4rem;
-      padding: 1.2rem 1.6rem;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--amber);
-      border-radius: var(--radius);
-      font-family: var(--mono);
-      font-size: 13px;
-      color: var(--slate);
-      display: inline-block;
-    }
-
-    .hero-equation .eq-label {
-      font-size: 11px;
-      color: var(--amber);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.3rem;
-    }
-
-    .hero-equation .eq-math {
-      color: var(--text2);
-    }
-
-    .hero-equation span.hi {
-      color: var(--amber2);
-    }
-
-    .hero-equation span.hi2 {
-      color: var(--teal2);
-    }
-
-    /* ── SECTION HEADERS ── */
     .section-label {
       font-family: var(--mono);
       font-size: 11px;
@@ -288,7 +244,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* ── ABOUT ── */
     #about .about-grid {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
@@ -326,9 +281,7 @@
       transition: border-color 0.2s;
     }
 
-    .focus-item:hover {
-      border-color: var(--border2);
-    }
+    .focus-item:hover { border-color: var(--border2); }
 
     .focus-icon {
       font-size: 18px;
@@ -351,10 +304,7 @@
       line-height: 1.6;
     }
 
-    /* ── STACK ── */
-    #stack {
-      background: transparent;
-    }
+    #stack { background: transparent; }
 
     .stack-grid {
       display: grid;
@@ -419,7 +369,6 @@
       border: 1px solid rgba(139, 154, 181, 0.2);
     }
 
-    /* ── PROJECTS ── */
     .project-card {
       background: var(--bg3);
       border: 1px solid var(--border);
@@ -429,9 +378,7 @@
       transition: border-color 0.25s;
     }
 
-    .project-card:hover {
-      border-color: var(--border2);
-    }
+    .project-card:hover { border-color: var(--border2); }
 
     .project-header {
       display: flex;
@@ -495,9 +442,7 @@
       border-right: 1px solid var(--border);
     }
 
-    .project-cell:last-child {
-      border-right: none;
-    }
+    .project-cell:last-child { border-right: none; }
 
     .cell-label {
       font-family: var(--mono);
@@ -509,17 +454,9 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .cell-label.challenge {
-      color: #e06c75;
-    }
-
-    .cell-label.solution {
-      color: var(--amber);
-    }
-
-    .cell-label.impact {
-      color: var(--teal);
-    }
+    .cell-label.challenge { color: #e06c75; }
+    .cell-label.solution { color: var(--amber); }
+    .cell-label.impact { color: var(--teal); }
 
     .project-cell p {
       font-size: 13.5px;
@@ -571,7 +508,6 @@
       letter-spacing: 0.02em;
     }
 
-    /* ── PUBLICATIONS / MORE PROJECTS ── */
     .mini-project-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -625,14 +561,8 @@
       display: block;
     }
 
-    /* ── CONNECT ── */
-    #connect {
-      text-align: center;
-    }
-
-    #connect h2 {
-      margin-bottom: 0.5rem;
-    }
+    #connect { text-align: center; }
+    #connect h2 { margin-bottom: 0.5rem; }
 
     #connect .sub {
       color: var(--text2);
@@ -648,7 +578,6 @@
       flex-wrap: wrap;
     }
 
-    /* ── FOOTER ── */
     footer {
       position: relative;
       z-index: 1;
@@ -677,25 +606,16 @@
     }
 
     @keyframes pulse {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.3;
-      }
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
     }
 
-    /* ── DIVIDER ── */
     .divider {
       border: none;
       border-top: 1px solid var(--border);
       margin: 0;
     }
 
-    /* ── SCROLL REVEAL ── */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -707,56 +627,18 @@
       transform: translateY(0);
     }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      nav {
-        padding: 1rem 1.5rem;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      section {
-        padding: 4rem 1.5rem;
-      }
-
-      #about .about-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-
-      .project-body {
-        grid-template-columns: 1fr;
-      }
-
-      .project-cell {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .project-cell:last-child {
-        border-bottom: none;
-      }
-
-      .project-header {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .mini-project-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stack-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      footer {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-      }
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      section { padding: 4rem 1.5rem; }
+      #about .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .project-body { grid-template-columns: 1fr; }
+      .project-cell { border-right: none; border-bottom: 1px solid var(--border); }
+      .project-cell:last-child { border-bottom: none; }
+      .project-header { flex-direction: column; gap: 1rem; }
+      .mini-project-grid { grid-template-columns: 1fr; }
+      .stack-grid { grid-template-columns: 1fr 1fr; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
   </style>
 </head>
@@ -764,7 +646,7 @@
 <body>
 
   <nav>
-    <a href="#hero" class="nav-logo">EA // HYBRID ENGINEER</a>
+    <a href="#hero" class="nav-logo">EA // PROCESS · ENVIRONMENT · ENERGY</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#stack">Stack</a></li>
@@ -774,14 +656,10 @@
   </nav>
 
   <section id="hero" style="margin:0 auto; padding-left:3rem; padding-right:3rem;">
-    <div class="hero-eyebrow">MSc Air Quality, Solid Waste &amp; Wastewater Process Engineering · BSc Chemical
-      Engineering</div>
+    <div class="hero-eyebrow">MSc Air Quality, Solid Waste &amp; Wastewater Process Engineering · BSc Chemical Engineering</div>
     <h1>Trained on<br><em>pollutants,</em><br>fluids, and data.</h1>
     <p class="hero-sub">
-      My foundation is built on Combustion Systems, Fluid Dynamics, and Process Engineering. I apply that Classical
-      Domain knowledge to Industrial Decarbonization by leveraging modern Machine Learning and Process Simulation.
-      Deeply curious and driven to solve hard problems, my focus is bridging the gap between Theoretical Physics and
-      Scalable Production Systems.
+      My background is in <strong>chemical, environmental, and process engineering</strong>, with experience in manufacturing operations and current research exposure to syngas production and CO₂ capture. I use process simulation, data analysis, CFD, and machine learning to model real engineering problems: emissions behavior, energy performance, process efficiency, and decarbonization pathways. My work sits at the intersection of environmental responsibility, industrial operations, and quantitative modeling.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects →</a>
@@ -795,59 +673,49 @@
 
   <section id="about">
     <div class="section-label">01 / Profile</div>
-    <h2>Domain Expertise Backed by Computational Rigor</h2>
+    <h2>Process Engineering with an Environmental and Energy Systems Lens</h2>
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          I hold a BSc in Chemical Engineering and am completing an MSc in <strong>Air Quality Control, Solid Waste and
-            Wastewater Process Engineering</strong> at the University of Stuttgart. This dual background bridges a
-          critical gap in the industry. While most specialists approach problems strictly from either a software
-          perspective or a hardware perspective, I am trained to operate seamlessly across both domains.
+          I hold a BSc in Chemical Engineering and am completing an MSc in <strong>Air Quality Control, Solid Waste and Wastewater Process Engineering</strong> at the University of Stuttgart. My training connects core process engineering with environmental protection and energy-system challenges, particularly in emissions control, combustion, wastewater treatment, waste management, and industrial decarbonization.
         </p>
         <p>
-          Understanding emissions and optimizing industrial processes is not simply a data challenge. It is
-          fundamentally a problem rooted in Chemistry, Thermodynamics, and Fluid Mechanics. My technical curiosity
-          drives me to look inside the black box. Because I understand the underlying physics of pollutant formation and
-          energy transfer, I design data pipelines and AI models that respect physical laws rather than relying on pure
-          correlation.
+          Before moving deeper into environmental and energy systems, I worked in <strong>manufacturing operations for over three years</strong>, where I saw how process stability, maintenance coordination, production data, and operator decisions affect real plant performance. That experience shapes how I approach modeling: I care about tools that are useful under real operating constraints, not only technically interesting. Useful engineering tools must account for imperfect data, maintenance constraints, process variability, and the realities of plant operation.
         </p>
         <p>
-          I have a strong aptitude for mastering complex concepts quickly and am constantly expanding my technical
-          toolkit to build more intelligent engineering workflows. I am actively seeking roles and dynamic teams focused
-          on <strong>Energy Systems, Industrial Predictive Modeling, Process Optimization, and Decarbonization
-            Technology</strong>.
+          I am currently doing research work with exposure to <strong>syngas production and CO₂ capture</strong>, which adds energy-transition context to my environmental engineering foundation. I use simulation, data analysis, CFD, and machine learning to support engineering decisions while keeping the physical and chemical constraints of the system in view.
+        </p>
+        <p>
+          My focus areas are <strong>process engineering, environmental engineering, and energy engineering</strong>. I work well with teams tackling emissions reduction, plant optimization, industrial sustainability, energy systems, wastewater processes, and decarbonization technologies.
         </p>
       </div>
       <ul class="focus-list reveal">
         <li class="focus-item">
           <span class="focus-icon">🔥</span>
           <div>
-            <div class="focus-item-title">Combustion &amp; Process Design</div>
-            <div class="focus-item-desc">Expertise in Firing systems, complex Reaction Kinetics, and designing robust
-              Flue gas cleaning systems from first principles.</div>
+            <div class="focus-item-title">Process &amp; Plant Systems</div>
+            <div class="focus-item-desc">Manufacturing operations, combustion, reaction systems, flue gas treatment, wastewater processes, troubleshooting, and process efficiency.</div>
+          </div>
+        </li>
+        <li class="focus-item">
+          <span class="focus-icon">🌿</span>
+          <div>
+            <div class="focus-item-title">Environmental Engineering</div>
+            <div class="focus-item-desc">Air quality control, emissions reduction, solid waste, wastewater treatment, environmental monitoring, and compliance-oriented analysis.</div>
           </div>
         </li>
         <li class="focus-item">
           <span class="focus-icon">⚡</span>
           <div>
-            <div class="focus-item-title">Applied Decarbonization</div>
-            <div class="focus-item-desc">Translating regulatory targets into actionable code by building carbon
-              intensity forecasting models and plant efficiency pipelines.</div>
+            <div class="focus-item-title">Energy &amp; Decarbonization</div>
+            <div class="focus-item-desc">Syngas production, CO₂ capture, carbon intensity forecasting, industrial energy use, load behavior, and cleaner process operation.</div>
           </div>
         </li>
         <li class="focus-item">
           <span class="focus-icon">⚙</span>
           <div>
-            <div class="focus-item-title">Digital Twins &amp; Simulation</div>
-            <div class="focus-item-desc">Coupling industrial solvers like Aspen Plus and OpenFOAM with machine learning
-              surrogates for real-time state estimation.</div>
-          </div>
-        </li>
-        <li class="focus-item">
-          <span class="focus-icon">🧠</span>
-          <div>
-            <div class="focus-item-title">Adaptability &amp; Continuous Learning</div>
-            <div class="focus-item-desc">Highly self-motivated to solve custom engineering challenges.</div>
+            <div class="focus-item-title">Simulation &amp; Data Modeling</div>
+            <div class="focus-item-desc">Aspen Plus, OpenFOAM, MATLAB, Python, time-series forecasting, operating-data analysis, and physics-informed machine learning.</div>
           </div>
         </li>
       </ul>
@@ -858,7 +726,7 @@
 
   <section id="stack">
     <div class="section-label">02 / Technical Stack</div>
-    <h2>Built for Industrial Deployment</h2>
+    <h2>Tools Grounded in Engineering Practice</h2>
     <div class="stack-grid">
       <div class="stack-card reveal">
         <div class="stack-card-label">Process Engineering</div>
@@ -866,40 +734,46 @@
           <span class="tag tag-eng">Aspen Plus</span>
           <span class="tag tag-eng">OpenFOAM</span>
           <span class="tag tag-eng">MATLAB</span>
+          <span class="tag tag-eng">AutoCAD Plant 3D</span>
           <span class="tag tag-eng">Thermodynamics</span>
           <span class="tag tag-eng">CFD Modeling</span>
           <span class="tag tag-eng">Reaction Kinetics</span>
         </div>
       </div>
       <div class="stack-card reveal">
-        <div class="stack-card-label">Physics-Informed AI</div>
+        <div class="stack-card-label">Environmental &amp; Energy Systems</div>
+        <div class="tag-list">
+          <span class="tag tag-ai">Emissions Modeling</span>
+          <span class="tag tag-ai">Carbon Intensity</span>
+          <span class="tag tag-ai">Flue Gas Analysis</span>
+          <span class="tag tag-ai">CO₂ Capture</span>
+          <span class="tag tag-ai">Load Forecasting</span>
+          <span class="tag tag-ai">QGIS</span>
+          <span class="tag tag-ai">Compliance Analysis</span>
+        </div>
+      </div>
+      <div class="stack-card reveal">
+        <div class="stack-card-label">Simulation &amp; Modeling</div>
         <div class="tag-list">
           <span class="tag tag-ai">PINNs</span>
           <span class="tag tag-ai">PyTorch</span>
           <span class="tag tag-ai">Surrogate Models</span>
           <span class="tag tag-ai">MC Dropout</span>
-          <span class="tag tag-ai">Digital Twins</span>
           <span class="tag tag-ai">XGBoost</span>
-        </div>
-      </div>
-      <div class="stack-card reveal">
-        <div class="stack-card-label">Time-Series &amp; Analytics</div>
-        <div class="tag-list">
-          <span class="tag tag-ai">Amazon Chronos-T5</span>
           <span class="tag tag-ai">Scikit-Learn</span>
-          <span class="tag tag-ai">Forecasting Pipelines</span>
-          <span class="tag tag-data">Feature Engineering</span>
-          <span class="tag tag-data">Statistical Analysis</span>
+          <span class="tag tag-ai">Amazon Chronos-T5</span>
         </div>
       </div>
       <div class="stack-card reveal">
-        <div class="stack-card-label">Software &amp; Deployment</div>
+        <div class="stack-card-label">Data &amp; Computational Tools</div>
         <div class="tag-list">
           <span class="tag tag-data">Python</span>
+          <span class="tag tag-data">R</span>
           <span class="tag tag-data">SQL</span>
+          <span class="tag tag-data">Excel</span>
           <span class="tag tag-data">Pandas / NumPy</span>
-          <span class="tag tag-data">REST APIs</span>
           <span class="tag tag-data">Streamlit</span>
+          <span class="tag tag-data">Visio</span>
           <span class="tag tag-data">Git / CI/CD</span>
         </div>
       </div>
@@ -915,10 +789,9 @@
     <div class="project-card reveal" style="margin-top:2.5rem;">
       <div class="project-header">
         <div>
-          <div class="project-number">PROJECT 01 · ENERGY SYSTEMS</div>
+          <div class="project-number">PROJECT 01 · ENERGY SYSTEMS &amp; DECARBONIZATION</div>
           <div class="project-title">German Energy Grid &amp; Carbon Intensity Forecasting</div>
-          <div class="project-subtitle">End-to-end multi-horizon predictive pipeline · Benchmarking XGBoost vs.
-            Foundation Models</div>
+          <div class="project-subtitle">Multi-horizon predictive pipeline · Benchmarking XGBoost vs. Foundation Models</div>
         </div>
         <div class="project-links">
           <a href="https://github.com/kwesiamoh/energy-forecast" target="_blank" class="project-link">GitHub ↗</a>
@@ -927,32 +800,23 @@
       <div class="project-body">
         <div class="project-cell">
           <div class="cell-label challenge">Challenge</div>
-          <p>Grid operators require precise 24-hour demand and carbon intensity forecasts to shift heavy industrial
-            loads toward renewable peaks. Standard autoregressive models suffer from error compounding over extended
-            horizons. This forces operators to maintain <strong>expensive spinning reserve capacity</strong> to account
-            for prediction uncertainty.</p>
+          <p>Grid operators need reliable 24-hour demand and carbon intensity forecasts to shift industrial loads toward renewable generation peaks. Standard autoregressive models compound errors over longer horizons, making it difficult to schedule loads effectively or reduce reliance on <strong>backup reserve capacity</strong>.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label solution">Solution</div>
-          <p>Engineered an automated pipeline ingesting 80,000 records from multiple federal APIs. I designed physical
-            composite features to capture diurnal cycles and grid load behaviors directly. I then executed a
-           comparative evaluation between optimized <strong>XGBoost</strong> configurations and zero-shot deployment of
-            <strong>Amazon Chronos-T5</strong>.
-          </p>
+          <p>Built an automated pipeline ingesting 80,000 records from federal energy APIs. Physical composite features were engineered to capture diurnal cycles and grid load patterns. I ran a structured comparison between optimized <strong>XGBoost</strong> configurations and zero-shot deployment of <strong>Amazon Chronos-T5</strong> across multiple forecast horizons.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label impact">Impact</div>
-          <p>Demonstrated that foundation models sustain predictive accuracy well beyond the 18-hour mark where
-            classical models typically degrade. For an industrial stakeholder, this reliability directly translates into
-            reduced backup power costs and highly effective load scheduling. The core architecture is modular and easily
-            adapts to new geographic zones.</p>
+          <p>Foundation models maintained predictive accuracy well beyond the 18-hour mark where classical models typically degrade. The results are relevant to industrial energy scheduling and carbon accounting, where forecast reliability directly affects operational planning. The pipeline is modular and adaptable to other grid zones.</p>
         </div>
       </div>
       <div class="project-tags">
         <span class="project-tags-label">SKILLS</span>
-        <span class="tag tag-ai">Time-Series AI</span>
+        <span class="tag tag-ai">Time-Series Forecasting</span>
         <span class="tag tag-ai">Zero-Shot Inference</span>
-        <span class="tag tag-eng">Domain Feature Synthesis</span>
+        <span class="tag tag-eng">Energy Systems</span>
+        <span class="tag tag-eng">Carbon Intensity</span>
         <span class="tag tag-data">API Integration</span>
         <span class="tag tag-data">Data Engineering</span>
       </div>
@@ -961,101 +825,88 @@
     <div class="project-card reveal">
       <div class="project-header">
         <div>
-          <div class="project-number">PROJECT 02 · DIGITAL TWINS</div>
+          <div class="project-number">PROJECT 02 · PROCESS ENGINEERING &amp; EMISSIONS MONITORING</div>
           <div class="project-title">Virtual Soft-Sensor for Turbine Emissions Monitoring</div>
-          <div class="project-subtitle">Physics-Informed Neural Network (PINN) architecture · Real-time operational
-            validation</div>
+          <div class="project-subtitle">Physics-informed neural network architecture · Uncertainty quantification for emissions inference</div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/kwesiamoh/gas-turbine-digital-twin" target="_blank" class="project-link">GitHub
-            ↗</a>
+          <a href="https://github.com/kwesiamoh/gas-turbine-digital-twin" target="_blank" class="project-link">GitHub ↗</a>
         </div>
       </div>
       <div class="project-body">
         <div class="project-cell">
           <div class="cell-label challenge">Challenge</div>
-          <p>Physical exhaust probes tracking hazardous gases like CO and NOx operate under aggressive thermal
-            conditions exceeding 600°C. Frequent sensor drift and hardware degradation lead to costly operational blind
-            spots. Relying on traditional uncalibrated data models creates severe regulatory compliance risks during
-            transient plant operations.</p>
+          <p>Exhaust probes tracking CO and NOx emissions operate under harsh thermal conditions above 600°C. Sensor drift and hardware degradation create gaps in monitoring data. During transient plant operations, these gaps carry real <strong>environmental compliance risks</strong> and can obscure how the process is actually performing.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label solution">Solution</div>
-          <p>Developed a custom deep learning soft-sensor incorporating a thermodynamic loss penalty alongside standard
-            data error metrics:</p>
+          <p>Developed a deep learning soft-sensor with a thermodynamic loss penalty alongside the standard data error term:</p>
           <div class="eq-block">ℒ = ℒ<sub>data</sub> + λ · ℒ<sub>physics</sub></div>
-          <p>This formulation enforces strict compliance with mass and energy balances. I implemented <strong>Monte
-              Carlo Dropout</strong> during inference to provide real-time statistical confidence bounds alongside every
-            point prediction.</p>
+          <p>This formulation keeps predictions consistent with mass and energy balances. <strong>Monte Carlo Dropout</strong> provides statistical confidence bounds at inference time, giving operators a sense of prediction reliability alongside each estimate.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label impact">Impact</div>
-          <p>Delivered an accurate predictive engine that infers emissions values using existing operational telemetry.
-            This approach eliminates the immediate need for auxiliary instrumentation while ensuring compliance. The
-            model feeds directly into an interactive dashboard designed for plant managers to monitor real-time process
-            health.</p>
+          <p>The model infers emissions values from existing operational telemetry, reducing immediate dependency on auxiliary instrumentation. Results feed into an interactive dashboard for monitoring process health. The approach demonstrates physics-constrained emissions inference as a practical complement to physical sensor networks.</p>
         </div>
       </div>
       <div class="project-tags">
         <span class="project-tags-label">SKILLS</span>
-        <span class="tag tag-ai">Custom Loss Functions</span>
-        <span class="tag tag-ai">Uncertainty Quantification</span>
+        <span class="tag tag-eng">Emissions Monitoring</span>
         <span class="tag tag-eng">Stoichiometry</span>
-        <span class="tag tag-eng">Digital Twins</span>
+        <span class="tag tag-ai">Physics-Informed ML</span>
+        <span class="tag tag-ai">Uncertainty Quantification</span>
         <span class="tag tag-data">Streamlit UI</span>
       </div>
     </div>
 
     <div class="project-card reveal">
-    <div class="project-header">
-      <div>
-        <div class="project-number">PROJECT 03 · COMPUTATIONAL FLUID DYNAMICS</div>
-        <div class="project-title">OpenFOAM Projects</div>
-        <div class="project-subtitle">Multiphase, biomedical, and reacting flows · Independent meshing &amp; solver configuration</div>
+      <div class="project-header">
+        <div>
+          <div class="project-number">PROJECT 03 · CFD &amp; PROCESS SIMULATION</div>
+          <div class="project-title">OpenFOAM Projects</div>
+          <div class="project-subtitle">Multiphase, reacting, and biomedical flows · Independent meshing &amp; solver configuration</div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/kwesiamoh/openfoam-projects" target="_blank" class="project-link">GitHub ↗</a>
+        </div>
       </div>
-      <div class="project-links">
-        <a href="https://github.com/kwesiamoh/openfoam-projects" target="_blank" class="project-link">GitHub ↗</a>
+      <div class="project-body">
+        <div class="project-cell">
+          <div class="cell-label challenge">Challenge</div>
+          <p>Industrial fluid dynamics problems rarely involve simple single-phase flows. Modeling phenomena like a <strong>Rayleigh–Taylor instability</strong> (water/oil mixing), non-Newtonian pulsatile <strong>aortic blood flow</strong>, or turbulent <strong>methane combustion</strong> requires careful numerical setup to maintain physical accuracy and prevent solver divergence.</p>
+        </div>
+        <div class="project-cell">
+          <div class="cell-label solution">Solution</div>
+          <p>Built three end-to-end simulation cases from first principles using <strong>OpenFOAM</strong>. Each workflow covers custom mesh generation, discretization scheme selection, runtime parameter tuning, and post-processing to extract velocity fields, species concentrations, and phase interface behavior.</p>
+        </div>
+        <div class="project-cell">
+          <div class="cell-label impact">Impact</div>
+          <p>Demonstrates applied CFD capability across flow regimes relevant to process and energy engineering: thermal mixing, reactive flows, and multiphase dynamics. Each case was built independently from geometry to results, without relying on pre-configured tutorials.</p>
+        </div>
+      </div>
+      <div class="project-tags">
+        <span class="project-tags-label">SKILLS</span>
+        <span class="tag tag-eng">OpenFOAM</span>
+        <span class="tag tag-eng">Multiphase Flow</span>
+        <span class="tag tag-eng">Reacting Flows</span>
+        <span class="tag tag-eng">Combustion</span>
+        <span class="tag tag-eng">Mesh Generation</span>
+        <span class="tag tag-data">Post-Processing</span>
       </div>
     </div>
-    <div class="project-body">
-      <div class="project-cell">
-        <div class="cell-label challenge">Challenge</div>
-        <p>Industrial fluid dynamics rarely involve simple, single-phase laminar flows. Modeling highly transient phenomena like a <strong>Rayleigh–Taylor instability</strong> (water/oil mixing), non-Newtonian pulsatile <strong>aortic blood flow</strong>, or turbulent <strong>methane combustion</strong> requires precise numerical control to prevent solver divergence and ensure physical accuracy.</p>
-      </div>
-      <div class="project-cell">
-        <div class="cell-label solution">Solution</div>
-        <p>Built and executed three end-to-end simulation cases from first principles using <strong>OpenFOAM</strong>. The workflows include custom computational mesh generation, selection of appropriate discretization schemes, runtime parameter tuning, and detailed post-processing to visualize velocity fields, species concentration, and phase interfaces.</p>
-      </div>
-      <div class="project-cell">
-        <div class="cell-label impact">Impact</div>
-        <p>Demonstrates deep versatility across multiple fluid domains. Whether analyzing thermal mixing, biological shear stresses, or chemical reaction zones, these independent implementations prove the ability to translate complex physical boundary conditions into stable, high-fidelity numerical models.</p>
-      </div>
-    </div>
-    <div class="project-tags">
-      <span class="project-tags-label">SKILLS</span>
-      <span class="tag tag-eng">OpenFOAM</span>
-      <span class="tag tag-eng">Multiphase Flow</span>
-      <span class="tag tag-eng">Reacting Flows</span>
-      <span class="tag tag-eng">Mesh Generation</span>
-      <span class="tag tag-eng">CFD Solvers</span>
-      <span class="tag tag-data">Post-Processing</span>
-    </div>
-  </div>
 
     <div class="section-label" style="margin-top:3rem;">Applied Research &amp; Analytics</div>
     <div class="mini-project-grid">
       <a href="https://github.com/kwesiamoh/cfd-fundamentals-matlab" target="_blank" class="mini-card reveal">
         <div class="mini-card-label">Computational Fluid Dynamics</div>
         <h4>CFD Core Fundamentals in MATLAB</h4>
-        <p>Simulating foundational fluid behaviors by implementing custom numerical discretization schemes and
-          convergence checks.</p>
+        <p>Implementing custom numerical discretization schemes and convergence checks to simulate foundational fluid behaviors from first principles.</p>
         <span class="mini-card-arrow">→ View Repository</span>
       </a>
       <a href="https://github.com/kwesiamoh/Data-Analysis" target="_blank" class="mini-card reveal">
         <div class="mini-card-label">Environmental Analytics</div>
         <h4>Environmental System Data Auditing</h4>
-        <p>Extracting operational efficiencies and evaluating compliance metrics across complex industrial monitoring
-          datasets.</p>
+        <p>Extracting operational efficiencies and evaluating compliance metrics across complex industrial environmental monitoring datasets.</p>
         <span class="mini-card-arrow">→ View Repository</span>
       </a>
     </div>
@@ -1065,10 +916,8 @@
 
   <section id="connect">
     <div class="section-label" style="justify-content:center;">04 / Contact</div>
-    <h2>Initiate a Conversation</h2>
-    <p class="sub">I am actively pursuing career opportunities and collaborative engineering projects where hybrid
-      modeling, decarbonization, and process innovation intersect. If your team seeks an engineer equipped to navigate
-      both physical infrastructure and advanced codebases, let us connect.</p>
+    <h2>Let's Connect</h2>
+    <p class="sub">Process engineering, environmental engineering, and energy systems are where my work lives. If your team is focused on industrial operations, emissions reduction, plant optimization, or decarbonization, I would be glad to hear from you.</p>
     <div class="connect-links">
       <a href="mailto:amohernest@gmail.com" class="btn btn-primary">amohernest@gmail.com →</a>
       <a href="https://www.linkedin.com/in/ernestamoh/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
@@ -1094,5 +943,4 @@
   </script>
 
 </body>
-
 </html>
