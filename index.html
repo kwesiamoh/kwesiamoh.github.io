@@ -4,649 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ernest Amoh, a process, environmental, and energy engineer focused on industrial systems, emissions reduction, process optimization, simulation, and data-supported engineering.">
   <title>Ernest Amoh | Process, Environmental &amp; Energy Engineer</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    :root {
-      --bg: #0c0f14;
-      --bg2: #111520;
-      --bg3: #161b26;
-      --surface: #1a2030;
-      --border: rgba(255, 255, 255, 0.07);
-      --border2: rgba(255, 255, 255, 0.13);
-      --amber: #e8a030;
-      --amber2: #f5c060;
-      --teal: #2ec4a0;
-      --teal2: #5edfc4;
-      --slate: #8b9ab5;
-      --text: #e4e9f2;
-      --text2: #9aaabb;
-      --serif: 'DM Serif Display', Georgia, serif;
-      --mono: 'JetBrains Mono', monospace;
-      --sans: 'Instrument Sans', system-ui, sans-serif;
-      --radius: 6px;
-      --radius2: 12px;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-      background-size: 60px 60px;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.1rem 3rem;
-      background: rgba(12, 15, 20, 0.85);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-logo {
-      font-family: var(--mono);
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--amber);
-      letter-spacing: 0.06em;
-      text-decoration: none;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--text2);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--text); }
-
-    section {
-      position: relative;
-      z-index: 1;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 6rem 2.5rem;
-    }
-
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-top: 8rem;
-      max-width: 1100px;
-    }
-
-    .hero-eyebrow {
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--teal);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .hero-eyebrow::before {
-      content: '';
-      display: inline-block;
-      width: 32px;
-      height: 1px;
-      background: var(--teal);
-    }
-
-    h1 {
-      font-family: var(--serif);
-      font-size: clamp(3rem, 7vw, 5.5rem);
-      line-height: 1.08;
-      color: var(--text);
-      margin-bottom: 1rem;
-    }
-
-    h1 em {
-      font-style: italic;
-      color: var(--amber);
-    }
-
-    .hero-sub {
-      font-family: var(--sans);
-      font-size: 1.15rem;
-      color: var(--text2);
-      max-width: 680px;
-      margin: 1.5rem 0 2.5rem;
-      line-height: 1.75;
-    }
-
-    .hero-sub strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .hero-cta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .btn {
-      font-family: var(--mono);
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      padding: 0.75rem 1.6rem;
-      border-radius: var(--radius);
-      text-decoration: none;
-      transition: all 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .btn-primary {
-      background: var(--amber);
-      color: #0c0f14;
-      font-weight: 600;
-      border: 1px solid var(--amber);
-    }
-
-    .btn-primary:hover {
-      background: var(--amber2);
-      border-color: var(--amber2);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--text2);
-      border: 1px solid var(--border2);
-    }
-
-    .btn-outline:hover {
-      color: var(--text);
-      border-color: rgba(255, 255, 255, 0.25);
-      background: var(--surface);
-    }
-
-    .section-label {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--teal);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border2);
-      max-width: 80px;
-    }
-
-    h2 {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 1rem;
-    }
-
-    h3 {
-      font-family: var(--serif);
-      font-size: 1.4rem;
-      color: var(--text);
-      margin-bottom: 0.5rem;
-    }
-
-    #about .about-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 4rem;
-      align-items: start;
-      margin-top: 3rem;
-    }
-
-    .about-text p {
-      color: var(--text2);
-      line-height: 1.8;
-      margin-bottom: 1.2rem;
-    }
-
-    .about-text p strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .focus-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .focus-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      padding: 1rem 1.2rem;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius2);
-      transition: border-color 0.2s;
-    }
-
-    .focus-item:hover { border-color: var(--border2); }
-
-    .focus-icon {
-      font-size: 18px;
-      color: var(--amber);
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .focus-item-title {
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--teal);
-      letter-spacing: 0.05em;
-      margin-bottom: 0.2rem;
-    }
-
-    .focus-item-desc {
-      font-size: 13px;
-      color: var(--text2);
-      line-height: 1.6;
-    }
-
-    #stack { background: transparent; }
-
-    .stack-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .stack-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius2);
-      padding: 1.5rem;
-      transition: border-color 0.25s, transform 0.2s;
-    }
-
-    .stack-card:hover {
-      border-color: var(--border2);
-      transform: translateY(-2px);
-    }
-
-    .stack-card-label {
-      font-family: var(--mono);
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      color: var(--amber);
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-      padding-bottom: 0.7rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .tag {
-      font-family: var(--mono);
-      font-size: 11px;
-      padding: 3px 9px;
-      border-radius: 3px;
-      letter-spacing: 0.03em;
-    }
-
-    .tag-eng {
-      background: rgba(232, 160, 48, 0.1);
-      color: var(--amber2);
-      border: 1px solid rgba(232, 160, 48, 0.2);
-    }
-
-    .tag-ai {
-      background: rgba(46, 196, 160, 0.1);
-      color: var(--teal2);
-      border: 1px solid rgba(46, 196, 160, 0.2);
-    }
-
-    .tag-data {
-      background: rgba(139, 154, 181, 0.1);
-      color: var(--slate);
-      border: 1px solid rgba(139, 154, 181, 0.2);
-    }
-
-    .project-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius2);
-      margin-bottom: 2rem;
-      overflow: hidden;
-      transition: border-color 0.25s;
-    }
-
-    .project-card:hover { border-color: var(--border2); }
-
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 2rem 2.5rem 1.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .project-number {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--amber);
-      letter-spacing: 0.15em;
-      margin-bottom: 0.5rem;
-    }
-
-    .project-title {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      color: var(--text);
-      margin-bottom: 0.3rem;
-    }
-
-    .project-subtitle {
-      font-size: 13px;
-      color: var(--text2);
-      font-family: var(--mono);
-    }
-
-    .project-links {
-      display: flex;
-      gap: 0.6rem;
-      flex-shrink: 0;
-    }
-
-    .project-link {
-      font-family: var(--mono);
-      font-size: 11px;
-      padding: 0.4rem 0.9rem;
-      border: 1px solid var(--border2);
-      border-radius: var(--radius);
-      color: var(--text2);
-      text-decoration: none;
-      transition: all 0.2s;
-      letter-spacing: 0.06em;
-    }
-
-    .project-link:hover {
-      color: var(--amber);
-      border-color: rgba(232, 160, 48, 0.4);
-    }
-
-    .project-body {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .project-cell {
-      padding: 1.5rem 2rem;
-      border-right: 1px solid var(--border);
-    }
-
-    .project-cell:last-child { border-right: none; }
-
-    .cell-label {
-      font-family: var(--mono);
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .cell-label.challenge { color: #e06c75; }
-    .cell-label.solution { color: var(--amber); }
-    .cell-label.impact { color: var(--teal); }
-
-    .project-cell p {
-      font-size: 13.5px;
-      color: var(--text2);
-      line-height: 1.75;
-    }
-
-    .project-cell p strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .project-cell code {
-      font-family: var(--mono);
-      font-size: 11.5px;
-      background: rgba(255, 255, 255, 0.06);
-      padding: 1px 5px;
-      border-radius: 3px;
-      color: var(--amber2);
-    }
-
-    .project-tags {
-      padding: 1rem 2.5rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      align-items: center;
-    }
-
-    .project-tags-label {
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--slate);
-      letter-spacing: 0.1em;
-      margin-right: 0.5rem;
-    }
-
-    .eq-block {
-      font-family: var(--mono);
-      font-size: 13px;
-      color: var(--amber2);
-      background: rgba(232, 160, 48, 0.06);
-      border: 1px solid rgba(232, 160, 48, 0.15);
-      border-radius: var(--radius);
-      padding: 0.6rem 0.9rem;
-      margin: 0.7rem 0;
-      display: inline-block;
-      letter-spacing: 0.02em;
-    }
-
-    .mini-project-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-      margin-top: 2rem;
-    }
-
-    .mini-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: var(--radius2);
-      padding: 1.3rem 1.5rem;
-      text-decoration: none;
-      display: block;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-
-    .mini-card:hover {
-      border-color: var(--border2);
-      transform: translateY(-2px);
-    }
-
-    .mini-card-label {
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--teal);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-
-    .mini-card h4 {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      color: var(--text);
-      margin-bottom: 0.4rem;
-      line-height: 1.3;
-    }
-
-    .mini-card p {
-      font-size: 13px;
-      color: var(--text2);
-      line-height: 1.6;
-    }
-
-    .mini-card-arrow {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--amber);
-      margin-top: 0.8rem;
-      display: block;
-    }
-
-    #connect { text-align: center; }
-    #connect h2 { margin-bottom: 0.5rem; }
-
-    #connect .sub {
-      color: var(--text2);
-      max-width: 600px;
-      margin: 0 auto 2.5rem;
-      font-size: 15px;
-    }
-
-    .connect-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    footer {
-      position: relative;
-      z-index: 1;
-      border-top: 1px solid var(--border);
-      padding: 2rem 3rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    footer p {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--slate);
-      letter-spacing: 0.06em;
-    }
-
-    .footer-dot {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--teal);
-      margin-right: 0.5rem;
-      animation: pulse 2.5s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 0;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { display: none; }
-      section { padding: 4rem 1.5rem; }
-      #about .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-      .project-body { grid-template-columns: 1fr; }
-      .project-cell { border-right: none; border-bottom: 1px solid var(--border); }
-      .project-cell:last-child { border-bottom: none; }
-      .project-header { flex-direction: column; gap: 1rem; }
-      .mini-project-grid { grid-template-columns: 1fr; }
-      .stack-grid { grid-template-columns: 1fr 1fr; }
-      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
-    }
-  </style>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-  <nav>
-    <a href="#hero" class="nav-logo">EA // PROCESS · ENVIRONMENT · ENERGY</a>
+  <!-- NAV -->
+  <nav aria-label="Primary navigation">
+    <a href="#hero" class="nav-logo">EA // PROCESS &middot; ENVIRONMENT &middot; ENERGY</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#stack">Stack</a></li>
@@ -655,22 +34,24 @@
     </ul>
   </nav>
 
-  <section id="hero" style="margin:0 auto; padding-left:3rem; padding-right:3rem;">
-    <div class="hero-eyebrow">MSc Air Quality, Solid Waste &amp; Wastewater Process Engineering · BSc Chemical Engineering</div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-eyebrow">MSc Air Quality, Solid Waste &amp; Wastewater Process Engineering &middot; BSc Chemical Engineering</div>
     <h1>Trained on<br><em>pollutants,</em><br>fluids, and data.</h1>
     <p class="hero-sub">
-      My background is in <strong>chemical, environmental, and process engineering</strong>, with experience in manufacturing operations and current research exposure to syngas production and CO₂ capture. I use process simulation, data analysis, CFD, and machine learning to model real engineering problems: emissions behavior, energy performance, process efficiency, and decarbonization pathways. My work sits at the intersection of environmental responsibility, industrial operations, and quantitative modeling.
+      My background is in <strong>chemical, environmental, and process engineering</strong>, with experience in manufacturing operations and current research exposure to syngas production and CO&#8322; capture. I use process simulation, data analysis, CFD, and machine learning to model real engineering problems: emissions behavior, energy performance, process efficiency, and decarbonization pathways. My work sits at the intersection of environmental responsibility, industrial operations, and quantitative modeling.
     </p>
     <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">View Projects →</a>
-      <a href="https://www.linkedin.com/in/ernestamoh/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
-      <a href="https://github.com/kwesiamoh" target="_blank" class="btn btn-outline">GitHub ↗</a>
+      <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
+      <a href="https://www.linkedin.com/in/ernestamoh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Ernest Amoh on LinkedIn">LinkedIn &#8599;</a>
+      <a href="https://github.com/kwesiamoh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Ernest Amoh on GitHub">GitHub &#8599;</a>
       <a href="mailto:amohernest@gmail.com" class="btn btn-outline">Email</a>
     </div>
   </section>
 
   <hr class="divider">
 
+  <!-- ABOUT -->
   <section id="about">
     <div class="section-label">01 / Profile</div>
     <h2>Process Engineering with an Environmental and Energy Systems Lens</h2>
@@ -683,36 +64,33 @@
           Before moving deeper into environmental and energy systems, I worked in <strong>manufacturing operations for over three years</strong>, where I saw how process stability, maintenance coordination, production data, and operator decisions affect real plant performance. That experience shapes how I approach modeling: I care about tools that are useful under real operating constraints, not only technically interesting. Useful engineering tools must account for imperfect data, maintenance constraints, process variability, and the realities of plant operation.
         </p>
         <p>
-          I am currently doing research work with exposure to <strong>syngas production and CO₂ capture</strong>, which adds energy-transition context to my environmental engineering foundation. I use simulation, data analysis, CFD, and machine learning to support engineering decisions while keeping the physical and chemical constraints of the system in view.
-        </p>
-        <p>
-          My focus areas are <strong>process engineering, environmental engineering, and energy engineering</strong>. The common thread across my work is cleaner and better-understood industrial processes, from emissions reduction and wastewater systems to plant optimization, energy systems, and decarbonization technologies..
+          My focus areas are <strong>process engineering, environmental engineering, and energy engineering</strong>. The common thread across my work is cleaner and better-understood industrial processes, from emissions reduction and wastewater systems to plant optimization, energy systems, and decarbonization technologies.
         </p>
       </div>
-      <ul class="focus-list reveal">
+      <ul class="focus-list reveal" aria-label="Focus areas">
         <li class="focus-item">
-          <span class="focus-icon">🔥</span>
+          <span class="focus-icon" aria-hidden="true">🔥</span>
           <div>
             <div class="focus-item-title">Process &amp; Plant Systems</div>
             <div class="focus-item-desc">Manufacturing operations, combustion, reaction systems, flue gas treatment, wastewater processes, troubleshooting, and process efficiency.</div>
           </div>
         </li>
         <li class="focus-item">
-          <span class="focus-icon">🌿</span>
+          <span class="focus-icon" aria-hidden="true">🌿</span>
           <div>
             <div class="focus-item-title">Environmental Engineering</div>
             <div class="focus-item-desc">Air quality control, emissions reduction, solid waste, wastewater treatment, environmental monitoring, and compliance-oriented analysis.</div>
           </div>
         </li>
         <li class="focus-item">
-          <span class="focus-icon">⚡</span>
+          <span class="focus-icon" aria-hidden="true">⚡</span>
           <div>
             <div class="focus-item-title">Energy &amp; Decarbonization</div>
-            <div class="focus-item-desc">Syngas production, CO₂ capture, carbon intensity forecasting, industrial energy use, load behavior, and cleaner process operation.</div>
+            <div class="focus-item-desc">Syngas production, CO&#8322; capture, carbon intensity forecasting, industrial energy use, load behavior, and cleaner process operation.</div>
           </div>
         </li>
         <li class="focus-item">
-          <span class="focus-icon">⚙</span>
+          <span class="focus-icon" aria-hidden="true">⚙</span>
           <div>
             <div class="focus-item-title">Simulation &amp; Data Modeling</div>
             <div class="focus-item-desc">Aspen Plus, OpenFOAM, MATLAB, Python, time-series forecasting, operating-data analysis, and physics-informed machine learning.</div>
@@ -724,9 +102,10 @@
 
   <hr class="divider">
 
+  <!-- STACK -->
   <section id="stack">
     <div class="section-label">02 / Technical Stack</div>
-    <h2>Process, Simulation & Data Tools</h2>
+    <h2>Process, Simulation &amp; Data Tools</h2>
     <div class="stack-grid">
       <div class="stack-card reveal">
         <div class="stack-card-label">Process Engineering</div>
@@ -746,7 +125,7 @@
           <span class="tag tag-ai">Emissions Modeling</span>
           <span class="tag tag-ai">Carbon Intensity</span>
           <span class="tag tag-ai">Flue Gas Analysis</span>
-          <span class="tag tag-ai">CO₂ Capture</span>
+          <span class="tag tag-ai">CO&#8322; Capture</span>
           <span class="tag tag-ai">Load Forecasting</span>
           <span class="tag tag-ai">QGIS</span>
           <span class="tag tag-ai">Compliance Analysis</span>
@@ -782,19 +161,21 @@
 
   <hr class="divider">
 
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="section-label">03 / Featured Work</div>
     <h2>Selected Projects</h2>
 
+    <!-- Project 01 -->
     <div class="project-card reveal" style="margin-top:2.5rem;">
       <div class="project-header">
         <div>
-          <div class="project-number">PROJECT 01 · ENERGY SYSTEMS &amp; DECARBONIZATION</div>
+          <div class="project-number">PROJECT 01 &middot; ENERGY SYSTEMS &amp; DECARBONIZATION</div>
           <div class="project-title">German Energy Grid &amp; Carbon Intensity Forecasting</div>
-          <div class="project-subtitle">Multi-horizon predictive pipeline · Benchmarking XGBoost vs. Foundation Models</div>
+          <div class="project-subtitle">Multi-horizon predictive pipeline &middot; Benchmarking XGBoost vs. Foundation Models</div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/kwesiamoh/energy-forecast" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://github.com/kwesiamoh/energy-forecast" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View energy forecasting project on GitHub">GitHub &#8599;</a>
         </div>
       </div>
       <div class="project-body">
@@ -822,26 +203,27 @@
       </div>
     </div>
 
+    <!-- Project 02 -->
     <div class="project-card reveal">
       <div class="project-header">
         <div>
-          <div class="project-number">PROJECT 02 · PROCESS ENGINEERING &amp; EMISSIONS MONITORING</div>
+          <div class="project-number">PROJECT 02 &middot; PROCESS ENGINEERING &amp; EMISSIONS MONITORING</div>
           <div class="project-title">Virtual Soft-Sensor for Turbine Emissions Monitoring</div>
-          <div class="project-subtitle">Physics-informed neural network architecture · Uncertainty quantification for emissions inference</div>
+          <div class="project-subtitle">Physics-informed neural network architecture &middot; Uncertainty quantification for emissions inference</div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/kwesiamoh/gas-turbine-digital-twin" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://github.com/kwesiamoh/gas-turbine-digital-twin" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View turbine soft-sensor project on GitHub">GitHub &#8599;</a>
         </div>
       </div>
       <div class="project-body">
         <div class="project-cell">
           <div class="cell-label challenge">Challenge</div>
-          <p>Exhaust probes tracking CO and NOx emissions operate under harsh thermal conditions above 600°C. Sensor drift and hardware degradation create gaps in monitoring data. During transient plant operations, these gaps carry real <strong>environmental compliance risks</strong> and can obscure how the process is actually performing.</p>
+          <p>Exhaust probes tracking CO and NOx emissions operate under harsh thermal conditions above 600&deg;C. Sensor drift and hardware degradation create gaps in monitoring data. During transient plant operations, these gaps carry real <strong>environmental compliance risks</strong> and can obscure how the process is actually performing.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label solution">Solution</div>
           <p>Developed a deep learning soft-sensor with a thermodynamic loss penalty alongside the standard data error term:</p>
-          <div class="eq-block">ℒ = ℒ<sub>data</sub> + λ · ℒ<sub>physics</sub></div>
+          <div class="eq-block">&#8466; = &#8466;<sub>data</sub> + &lambda; &middot; &#8466;<sub>physics</sub></div>
           <p>This formulation keeps predictions consistent with mass and energy balances. <strong>Monte Carlo Dropout</strong> provides statistical confidence bounds at inference time, giving operators a sense of prediction reliability alongside each estimate.</p>
         </div>
         <div class="project-cell">
@@ -859,21 +241,22 @@
       </div>
     </div>
 
+    <!-- Project 03 -->
     <div class="project-card reveal">
       <div class="project-header">
         <div>
-          <div class="project-number">PROJECT 03 · CFD &amp; PROCESS SIMULATION</div>
+          <div class="project-number">PROJECT 03 &middot; CFD &amp; PROCESS SIMULATION</div>
           <div class="project-title">OpenFOAM Projects</div>
-          <div class="project-subtitle">Multiphase, reacting, and biomedical flows · Independent meshing &amp; solver configuration</div>
+          <div class="project-subtitle">Multiphase, reacting, and biomedical flows &middot; Independent meshing &amp; solver configuration</div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/kwesiamoh/openfoam-projects" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://github.com/kwesiamoh/openfoam-projects" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View OpenFOAM projects on GitHub">GitHub &#8599;</a>
         </div>
       </div>
       <div class="project-body">
         <div class="project-cell">
           <div class="cell-label challenge">Challenge</div>
-          <p>Industrial fluid dynamics problems rarely involve simple single-phase flows. Modeling phenomena like a <strong>Rayleigh–Taylor instability</strong> (water/oil mixing), non-Newtonian pulsatile <strong>aortic blood flow</strong>, or turbulent <strong>methane combustion</strong> requires careful numerical setup to maintain physical accuracy and prevent solver divergence.</p>
+          <p>Industrial fluid dynamics problems rarely involve simple single-phase flows. Modeling phenomena like a <strong>Rayleigh&#8211;Taylor instability</strong> (water/oil mixing), non-Newtonian pulsatile <strong>aortic blood flow</strong>, or turbulent <strong>methane combustion</strong> requires careful numerical setup to maintain physical accuracy and prevent solver divergence.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label solution">Solution</div>
@@ -895,52 +278,46 @@
       </div>
     </div>
 
+    <!-- Applied Research & Analytics -->
     <div class="section-label" style="margin-top:3rem;">Applied Research &amp; Analytics</div>
     <div class="mini-project-grid">
-      <a href="https://github.com/kwesiamoh/cfd-fundamentals-matlab" target="_blank" class="mini-card reveal">
+      <a href="https://github.com/kwesiamoh/cfd-fundamentals-matlab" target="_blank" rel="noopener noreferrer" class="mini-card reveal" aria-label="CFD Core Fundamentals in MATLAB repository">
         <div class="mini-card-label">Computational Fluid Dynamics</div>
         <h4>CFD Core Fundamentals in MATLAB</h4>
         <p>Implementing custom numerical discretization schemes and convergence checks to simulate foundational fluid behaviors from first principles.</p>
-        <span class="mini-card-arrow">→ View Repository</span>
+        <span class="mini-card-arrow">&rarr; View Repository</span>
       </a>
-      <a href="https://github.com/kwesiamoh/Data-Analysis" target="_blank" class="mini-card reveal">
+      <a href="https://github.com/kwesiamoh/Data-Analysis" target="_blank" rel="noopener noreferrer" class="mini-card reveal" aria-label="Environmental System Data Auditing repository">
         <div class="mini-card-label">Environmental Analytics</div>
         <h4>Environmental System Data Auditing</h4>
         <p>Extracting operational efficiencies and evaluating compliance metrics across complex industrial environmental monitoring datasets.</p>
-        <span class="mini-card-arrow">→ View Repository</span>
+        <span class="mini-card-arrow">&rarr; View Repository</span>
       </a>
     </div>
   </section>
 
   <hr class="divider">
 
+  <!-- CONNECT -->
   <section id="connect">
     <div class="section-label" style="justify-content:center;">04 / Contact</div>
     <h2>Let's Connect</h2>
     <p class="sub">My interests sit at the intersection of process engineering, environmental engineering, and energy systems. I aim to make practical impact in industrial operations, emissions reduction, plant optimization, and decarbonization through process understanding, operating-data analysis, and computational modeling.</p>
     <div class="connect-links">
-      <a href="mailto:amohernest@gmail.com" class="btn btn-primary">amohernest@gmail.com →</a>
-      <a href="https://www.linkedin.com/in/ernestamoh/" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
-      <a href="https://github.com/kwesiamoh" target="_blank" class="btn btn-outline">GitHub ↗</a>
+      <a href="mailto:amohernest@gmail.com" class="btn btn-primary">amohernest@gmail.com &rarr;</a>
+      <a href="https://www.linkedin.com/in/ernestamoh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Ernest Amoh on LinkedIn">LinkedIn &#8599;</a>
+      <a href="https://github.com/kwesiamoh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Ernest Amoh on GitHub">GitHub &#8599;</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p><span class="footer-dot"></span>Ernest Amoh // Based in Stuttgart, Germany</p>
-    <p>MSc Air Quality, Solid Waste &amp; Wastewater Process Engineering · University of Stuttgart</p>
+    <p><span class="footer-dot" aria-hidden="true"></span>Ernest Amoh // Based in Stuttgart, Germany</p>
+    <p>MSc Air Quality, Solid Waste &amp; Wastewater Process Engineering &middot; University of Stuttgart</p>
   </footer>
 
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
