@@ -23,13 +23,3 @@ Numerical implementations of canonical CFD problems, including discretization, s
 
 ### OpenFOAM Case Studies
 CFD case studies involving solver setup, boundary conditions, residual analysis, post-processing, and interpretation of engineering flow fields.
-
-## What I Am Looking For
-
-Working-student, internship, thesis, or entry-level opportunities in:
-
-- CFD / simulation engineering
-- Energy systems analysis
-- Process engineering and decarbonization
-- Data science for sustainability and industrial systems
-- Digital twins and predictive modeling
