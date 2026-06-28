@@ -44,7 +44,7 @@
     <div class="hero-eyebrow">MSc Candidate in Air Quality, Solid Waste &amp; Wastewater Process Engineering &middot; BSc Chemical Engineering</div>
     <h1>Trained on<br><em>pollutants,</em><br>fluids, and industrial data.</h1>
     <p class="hero-sub">
-      My background is in <strong>chemical, environmental, and process engineering</strong>, with experience in manufacturing operations and current research exposure to syngas production and CO&#8322; capture. I use process simulation, data analysis, CFD, and machine learning to model real engineering problems: emissions behavior, energy performance, process efficiency, and decarbonization pathways. My work sits at the intersection of environmental responsibility, industrial operations, and quantitative modeling.
+      My background is in <strong>chemical, environmental, and process engineering</strong>, with experience in manufacturing operations and current research exposure to syngas production and CO&#8322; capture. I apply process simulation, CFD, data analysis, and machine learning to study engineering problems involving emissions, energy systems, process performance, and decarbonization. My work sits at the intersection of environmental responsibility, industrial operations, and quantitative modeling.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
@@ -110,52 +110,48 @@
     <h2>Process, Simulation &amp; Data Tools</h2>
     <div class="stack-grid">
       <div class="stack-card reveal">
-        <div class="stack-card-label">Process Engineering</div>
+        <div class="stack-card-label">Engineering Software</div>
         <div class="tag-list">
           <span class="tag tag-eng">Aspen Plus</span>
           <span class="tag tag-eng">OpenFOAM</span>
           <span class="tag tag-eng">MATLAB</span>
           <span class="tag tag-eng">AutoCAD Plant 3D</span>
-          <span class="tag tag-eng">Thermodynamics</span>
-          <span class="tag tag-eng">CFD Modeling</span>
-          <span class="tag tag-eng">Reaction Kinetics</span>
+          <span class="tag tag-eng">Python</span>
+          <span class="tag tag-eng">QGIS</span>
         </div>
       </div>
       <div class="stack-card reveal">
-        <div class="stack-card-label">Environmental &amp; Energy Systems</div>
+        <div class="stack-card-label">Engineering Methods</div>
         <div class="tag-list">
-          <span class="tag tag-ai">Emissions Modeling</span>
-          <span class="tag tag-ai">Carbon Intensity</span>
-          <span class="tag tag-ai">Flue Gas Analysis</span>
-          <span class="tag tag-ai">CO&#8322; Capture</span>
-          <span class="tag tag-ai">Load Forecasting</span>
-          <span class="tag tag-ai">QGIS</span>
-          <span class="tag tag-ai">Compliance Analysis</span>
+          <span class="tag tag-ai">Process Simulation</span>
+          <span class="tag tag-ai">CFD</span>
+          <span class="tag tag-ai">Reaction Engineering</span>
+          <span class="tag tag-ai">Thermodynamics</span>
+          <span class="tag tag-ai">Heat &amp; Mass Transfer</span>
+          <span class="tag tag-ai">Operating-Data Analysis</span>
         </div>
       </div>
       <div class="stack-card reveal">
-        <div class="stack-card-label">Simulation &amp; Modeling</div>
+        <div class="stack-card-label">Machine Learning &amp; Analytics</div>
         <div class="tag-list">
-          <span class="tag tag-ai">PINNs</span>
           <span class="tag tag-ai">PyTorch</span>
-          <span class="tag tag-ai">Surrogate Models</span>
-          <span class="tag tag-ai">MC Dropout</span>
           <span class="tag tag-ai">XGBoost</span>
           <span class="tag tag-ai">Scikit-Learn</span>
           <span class="tag tag-ai">Amazon Chronos-T5</span>
+          <span class="tag tag-ai">Physics-Informed ML</span>
+          <span class="tag tag-ai">Monte Carlo Dropout</span>
+          <span class="tag tag-ai">Time-Series Forecasting</span>
         </div>
       </div>
       <div class="stack-card reveal">
-        <div class="stack-card-label">Data &amp; Computational Tools</div>
+        <div class="stack-card-label">Engineering Applications</div>
         <div class="tag-list">
-          <span class="tag tag-data">Python</span>
-          <span class="tag tag-data">R</span>
-          <span class="tag tag-data">SQL</span>
-          <span class="tag tag-data">Excel</span>
-          <span class="tag tag-data">Pandas / NumPy</span>
-          <span class="tag tag-data">Streamlit</span>
-          <span class="tag tag-data">Visio</span>
-          <span class="tag tag-data">Git / CI/CD</span>
+          <span class="tag tag-data">Emissions Modeling</span>
+          <span class="tag tag-data">Carbon Intensity Analysis</span>
+          <span class="tag tag-data">Air Quality</span>
+          <span class="tag tag-data">Combustion</span>
+          <span class="tag tag-data">Wastewater Systems</span>
+          <span class="tag tag-data">Environmental Monitoring</span>
         </div>
       </div>
     </div>
@@ -187,11 +183,15 @@
         </div>
         <div class="project-cell">
           <div class="cell-label solution">Solution</div>
-          <p>Built an automated pipeline ingesting 80,000 records from federal energy APIs. Physical composite features were engineered to capture diurnal cycles and grid load patterns. I ran a structured comparison between optimized <strong>XGBoost</strong> configurations and zero-shot deployment of <strong>Amazon Chronos-T5</strong> across multiple forecast horizons.</p>
+           <p>
+              Built an end-to-end forecasting pipeline using approximately <strong>80,000 hourly observations</strong> from German power system, weather, and market datasets. Engineered physically informed forecasting features and compared recursive <strong>XGBoost</strong> models with zero-shot <strong>Amazon Chronos-T5</strong> across multiple prediction horizons.
+           </p>
         </div>
         <div class="project-cell">
           <div class="cell-label impact">Impact</div>
-          <p>Foundation models maintained predictive accuracy well beyond the 18-hour mark where classical models typically degrade. The results are relevant to industrial energy scheduling and carbon accounting, where forecast reliability directly affects operational planning. The pipeline is modular and adaptable to other grid zones.</p>
+          <p>
+            Compared with the recursive XGBoost baseline, Chronos-T5 maintained more stable forecasts across longer prediction horizons on the evaluated dataset. The workflow combines energy-system analysis with forecasting to support applications such as industrial load scheduling and carbon-aware electricity use.
+          </p>
         </div>
       </div>
       <div class="project-tags">
@@ -211,7 +211,7 @@
         <div>
           <div class="project-number">PROJECT 02 &middot; PROCESS ENGINEERING &amp; EMISSIONS MONITORING</div>
           <div class="project-title">Virtual Soft-Sensor for Turbine Emissions Monitoring</div>
-          <div class="project-subtitle">Physics-informed neural network architecture &middot; Uncertainty quantification for emissions inference</div>
+          <div class="project-subtitle">Physics-informed neural network &middot; Uncertainty-aware emissions prediction</div>
         </div>
         <div class="project-links">
           <a href="https://github.com/kwesiamoh/gas-turbine-digital-twin" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View turbine soft-sensor project on GitHub">GitHub &#8599;</a>
@@ -226,11 +226,11 @@
           <div class="cell-label solution">Solution</div>
           <p>Developed a deep learning soft-sensor with a thermodynamic loss penalty alongside the standard data error term:</p>
           <div class="eq-block">&#8466; = &#8466;<sub>data</sub> + &lambda; &middot; &#8466;<sub>physics</sub></div>
-          <p>This formulation keeps predictions consistent with mass and energy balances. <strong>Monte Carlo Dropout</strong> provides statistical confidence bounds at inference time, giving operators a sense of prediction reliability alongside each estimate.</p>
+          <p>This formulation encourages predictions that remain consistent with thermodynamic relationships alongside the observed data. <strong>Monte Carlo Dropout</strong> is used to estimate predictive uncertainty during inference, giving operators an indication of model confidence alongside each prediction.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label impact">Impact</div>
-          <p>The model infers emissions values from existing operational telemetry, reducing immediate dependency on auxiliary instrumentation. Results feed into an interactive dashboard for monitoring process health. The approach demonstrates physics-constrained emissions inference as a practical complement to physical sensor networks.</p>
+          <p>The model estimates CO and NOx emissions from existing operational telemetry and visualizes the predictions through an interactive monitoring dashboard. The project explores physics-informed soft sensing as a complementary approach to conventional emissions monitoring while highlighting the role of uncertainty estimation in engineering decision support.</p>
         </div>
       </div>
       <div class="project-tags">
@@ -258,15 +258,15 @@
       <div class="project-body">
         <div class="project-cell">
           <div class="cell-label challenge">Challenge</div>
-          <p>Industrial fluid dynamics problems rarely involve simple single-phase flows. Modeling phenomena like a <strong>Rayleigh&#8211;Taylor instability</strong> (water/oil mixing), non-Newtonian pulsatile <strong>aortic blood flow</strong>, or turbulent <strong>methane combustion</strong> requires careful numerical setup to maintain physical accuracy and prevent solver divergence.</p>
+          <p>Many engineering CFD problems involve multiphase, reacting, or non-Newtonian flows. Simulating cases such as <strong>Rayleigh&#8211;Taylor instability</strong>, pulsatile <strong>aortic blood flow</strong>, and turbulent <strong>methane combustion</strong> requires careful numerical setup to achieve stable and physically meaningful solutions.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label solution">Solution</div>
-          <p>Built three end-to-end simulation cases from first principles using <strong>OpenFOAM</strong>. Each workflow covers custom mesh generation, discretization scheme selection, runtime parameter tuning, and post-processing to extract velocity fields, species concentrations, and phase interface behavior.</p>
+          <p>Three independently configured <strong>OpenFOAM</strong> simulation cases covering multiphase, reacting, and biomedical flows. Each workflow includes geometry preparation, mesh generation, boundary-condition specification, solver configuration, transient simulation, and post-processing using ParaView.</p>
         </div>
         <div class="project-cell">
           <div class="cell-label impact">Impact</div>
-          <p>Demonstrates applied CFD capability across flow regimes relevant to process and energy engineering: thermal mixing, reactive flows, and multiphase dynamics. Each case was built independently from geometry to results, without relying on pre-configured tutorials.</p>
+          <p>Demonstrates applied CFD capability across flow regimes relevant to process and energy engineering, including combustion, multiphase flow, and non-Newtonian fluid mechanics. The projects emphasize reproducible simulation workflows rather than isolated numerical results.</p>
         </div>
       </div>
       <div class="project-tags">
@@ -286,13 +286,13 @@
       <a href="https://github.com/kwesiamoh/cfd-fundamentals-matlab" target="_blank" rel="noopener noreferrer" class="mini-card reveal" aria-label="CFD Core Fundamentals in MATLAB repository">
         <div class="mini-card-label">Computational Fluid Dynamics</div>
         <h4>CFD Core Fundamentals in MATLAB</h4>
-        <p>Implementing custom numerical discretization schemes and convergence checks to simulate foundational fluid behaviors from first principles.</p>
+        <p>Implementing finite-difference discretization schemes, iterative solvers, and convergence analysis in MATLAB to develop a deeper understanding of the numerical foundations of CFD.</p>
         <span class="mini-card-arrow">&rarr; View Repository</span>
       </a>
       <a href="https://github.com/kwesiamoh/Data-Analysis" target="_blank" rel="noopener noreferrer" class="mini-card reveal" aria-label="Environmental System Data Auditing repository">
         <div class="mini-card-label">Environmental Analytics</div>
         <h4>Environmental System Data Auditing</h4>
-        <p>Extracting operational efficiencies and evaluating compliance metrics across complex industrial environmental monitoring datasets.</p>
+        <p>Applying statistical analysis and visualization techniques to industrial environmental datasets to identify operational trends, evaluate monitoring quality, and support data-driven engineering decisions.</p>
         <span class="mini-card-arrow">&rarr; View Repository</span>
       </a>
     </div>
