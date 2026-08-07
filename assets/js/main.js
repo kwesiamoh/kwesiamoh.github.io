@@ -1,18 +1,19 @@
 /* ============================================================
    MAIN.JS
-   Restrained scroll reveal using IntersectionObserver
+   Restrained scroll reveal
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  const revealElements = document.querySelectorAll('.reveal');
+  const targets = document.querySelectorAll(
+    '.capability-item, .project-feature, .experience-item, .toolkit-group'
+  );
 
-  if (!revealElements.length) {
+
+  if (!targets.length) {
     return;
   }
 
-
-  /* Respect the user's operating-system motion preference */
 
   const prefersReducedMotion = window.matchMedia(
     '(prefers-reduced-motion: reduce)'
@@ -21,15 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (prefersReducedMotion) {
 
-    revealElements.forEach(function (element) {
-      element.classList.add('visible');
+    targets.forEach(function (target) {
+      target.classList.add('visible');
     });
 
     return;
   }
 
 
-  /* Reveal elements once when they enter the viewport */
+  targets.forEach(function (target) {
+    target.classList.add('reveal');
+  });
+
 
   const observer = new IntersectionObserver(
     function (entries) {
@@ -48,13 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     },
     {
-      threshold: 0.1
+      threshold: 0.08
     }
   );
 
 
-  revealElements.forEach(function (element) {
-    observer.observe(element);
+  targets.forEach(function (target) {
+    observer.observe(target);
   });
 
 });

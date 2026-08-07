@@ -1,12 +1,12 @@
 /* ============================================================
    COMPONENTS.CSS
-   Buttons, focus items, cards, tags and project components
+   Buttons, links and image treatments
    ============================================================ */
 
 
-/* ------------------------------------------------------------
-   Buttons
-   ------------------------------------------------------------ */
+/* ============================================================
+   BUTTONS
+   ============================================================ */
 
 .btn {
   display: inline-flex;
@@ -14,527 +14,225 @@
   align-items: center;
   justify-content: center;
 
-  gap: var(--space-2);
+  min-height: 44px;
 
   padding:
-    var(--space-3) var(--space-6);
+    0.75rem 1.3rem;
 
-  border-radius: var(--radius);
+  border: 1px solid transparent;
+
+  border-radius: var(--radius-small);
 
   font-family: var(--mono);
 
-  font-size: 12px;
+  font-size: 10px;
 
   letter-spacing: 0.08em;
 
-  text-decoration: none;
+  text-transform: uppercase;
 
-  cursor: pointer;
+  text-decoration: none;
 
   transition:
     background-color 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 
 .btn-primary {
   background: var(--amber);
 
-  color: #0c0f14;
-
-  font-weight: 600;
-
-  border: 1px solid var(--amber);
+  color: #fff;
 }
 
 
 .btn-primary:hover {
-  background: var(--amber2);
-
-  border-color: var(--amber2);
+  background: #a85d25;
 }
 
 
-.btn-outline {
-  background: transparent;
+.btn-light {
+  color: #fff;
 
-  color: var(--text2);
-
-  border: 1px solid var(--border2);
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 
-.btn-outline:hover {
-  color: var(--text);
+.btn-light:hover {
+  background: rgba(255, 255, 255, 0.10);
 
-  border-color: rgba(255, 255, 255, 0.25);
-
-  background: var(--surface);
+  border-color: #fff;
 }
 
 
-/* ------------------------------------------------------------
-   Focus areas
-   ------------------------------------------------------------ */
+/* ============================================================
+   TEXT LINKS
+   ============================================================ */
 
-.focus-list {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: var(--space-4);
-
-  list-style: none;
-}
-
-
-.focus-item {
-  padding:
-    var(--space-4) var(--space-5);
-
-  background: var(--bg3);
-
-  border: 1px solid var(--border);
-
-  border-radius: var(--radius2);
-
-  transition: border-color 0.2s ease;
-}
-
-
-.focus-item:hover {
-  border-color: var(--border2);
-}
-
-
-.focus-item-title {
-  margin-bottom: var(--space-1);
-
-  font-family: var(--mono);
-
-  font-size: 12px;
-
-  color: var(--teal);
-
-  letter-spacing: 0.05em;
-}
-
-
-.focus-item-desc {
-  font-size: 13px;
-
-  color: var(--text2);
-
-  line-height: 1.65;
-}
-
-
-/* ------------------------------------------------------------
-   Stack cards
-   ------------------------------------------------------------ */
-
-.stack-card {
-  padding: var(--space-6);
-
-  background: var(--bg3);
-
-  border: 1px solid var(--border);
-
-  border-radius: var(--radius2);
-
-  transition: border-color 0.2s ease;
-}
-
-
-.stack-card:hover {
-  border-color: var(--border2);
-}
-
-
-.stack-card-label {
-  margin-bottom: var(--space-4);
-
-  padding-bottom: var(--space-3);
-
-  border-bottom: 1px solid var(--border);
-
+.text-link {
   font-family: var(--mono);
 
   font-size: 10px;
 
-  color: var(--amber);
-
-  letter-spacing: 0.18em;
+  letter-spacing: 0.06em;
 
   text-transform: uppercase;
+
+  text-decoration: none;
+
+  color: var(--green);
 }
 
 
-/* ------------------------------------------------------------
-   Tags
-   ------------------------------------------------------------ */
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: var(--space-2);
+.text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 
-.tag {
-  padding:
-    var(--space-1) var(--space-2);
-
-  border-radius: 4px;
-
-  font-family: var(--mono);
-
-  font-size: 11px;
-
-  letter-spacing: 0.02em;
+.text-link.muted {
+  color: var(--ink-soft);
 }
 
 
-.tag-eng {
-  background: rgba(232, 160, 48, 0.1);
+/* ============================================================
+   PROJECT MEDIA
+   ============================================================ */
 
-  color: var(--amber2);
+.project-media {
+  position: relative;
 
-  border: 1px solid rgba(232, 160, 48, 0.2);
-}
-
-
-.tag-ai {
-  background: rgba(46, 196, 160, 0.1);
-
-  color: var(--teal2);
-
-  border: 1px solid rgba(46, 196, 160, 0.2);
-}
-
-
-.tag-data {
-  background: rgba(139, 154, 181, 0.1);
-
-  color: var(--slate);
-
-  border: 1px solid rgba(139, 154, 181, 0.2);
-}
-
-
-/* ------------------------------------------------------------
-   Project cards
-   ------------------------------------------------------------ */
-
-.project-card {
-  margin-bottom: var(--space-8);
+  min-height: 620px;
 
   overflow: hidden;
 
-  background: var(--bg3);
+  background-color: var(--green);
 
-  border: 1px solid var(--border);
-
-  border-radius: var(--radius2);
-
-  transition: border-color 0.2s ease;
+  background-size: cover;
+  background-position: center;
 }
 
 
-.project-card:hover {
-  border-color: var(--border2);
+.project-media::before {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(180deg,
+      rgba(18, 27, 22, 0.02),
+      rgba(18, 27, 22, 0.22));
+
+  pointer-events: none;
 }
 
 
-.project-number {
-  margin-bottom: var(--space-2);
+.media-caption {
+  position: absolute;
+
+  left: var(--space-5);
+  bottom: var(--space-5);
+
+  z-index: 2;
+
+  padding:
+    var(--space-2) var(--space-3);
+
+  background: rgba(242, 239, 231, 0.92);
+
+  color: var(--ink);
 
   font-family: var(--mono);
 
-  font-size: 11px;
+  font-size: 9px;
 
-  color: var(--amber);
+  letter-spacing: 0.07em;
 
-  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 
-.project-title {
-  margin-bottom: var(--space-1);
+.project-media-dashboard {
+  position: relative;
 
-  font-family: var(--serif);
-
-  font-size: 1.5rem;
-  line-height: 1.25;
-
-  color: var(--text);
-}
-
-
-.project-subtitle {
-  font-family: var(--mono);
-
-  font-size: 13px;
-  line-height: 1.6;
-
-  color: var(--text2);
-}
-
-
-.project-links {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
-  gap: var(--space-2);
+  overflow: hidden;
 
-  flex-shrink: 0;
+  background: #101719;
 }
 
 
-.project-link {
-  padding:
-    var(--space-2) var(--space-3);
+.project-media-dashboard img {
+  width: 100%;
+  height: 100%;
 
-  border: 1px solid var(--border2);
+  object-fit: contain;
 
-  border-radius: var(--radius);
-
-  font-family: var(--mono);
-
-  font-size: 11px;
-
-  color: var(--text2);
-
-  letter-spacing: 0.05em;
-
-  text-decoration: none;
-
-  transition:
-    color 0.2s ease,
-    border-color 0.2s ease;
-}
-
-
-.project-link:hover {
-  color: var(--amber);
-
-  border-color: rgba(232, 160, 48, 0.4);
-}
-
-
-/* ------------------------------------------------------------
-   Project body
-   ------------------------------------------------------------ */
-
-.project-cell {
-  padding:
-    var(--space-6) var(--space-8);
-
-  border-right: 1px solid var(--border);
-}
-
-
-.project-cell:last-child {
-  border-right: none;
-}
-
-
-.cell-label {
-  margin-bottom: var(--space-3);
-
-  padding-bottom: var(--space-2);
-
-  border-bottom: 1px solid var(--border);
-
-  font-family: var(--mono);
-
-  font-size: 10px;
-
-  letter-spacing: 0.18em;
-
-  text-transform: uppercase;
-}
-
-
-.cell-label.problem {
-  color: #e06c75;
-}
-
-
-.cell-label.approach {
-  color: var(--amber);
-}
-
-
-.cell-label.results {
-  color: var(--teal);
-}
-
-
-.project-cell p {
-  font-size: 13.5px;
-
-  color: var(--text2);
-
-  line-height: 1.75;
-}
-
-
-.project-cell p strong {
-  color: var(--text);
-
-  font-weight: 600;
-}
-
-
-.project-cell code {
-  padding:
-    1px var(--space-1);
-
-  border-radius: 3px;
-
-  background: rgba(255, 255, 255, 0.06);
-
-  font-family: var(--mono);
-
-  font-size: 11.5px;
-
-  color: var(--amber2);
-}
-
-
-.project-tags-label {
-  margin-right: var(--space-1);
-
-  font-family: var(--mono);
-
-  font-size: 10px;
-
-  color: var(--slate);
-
-  letter-spacing: 0.1em;
-}
-
-
-/* ------------------------------------------------------------
-   Equation block
-   ------------------------------------------------------------ */
-
-.eq-block {
-  display: inline-block;
-
-  margin:
-    var(--space-3) 0;
-
-  padding:
-    var(--space-2) var(--space-3);
-
-  border: 1px solid rgba(232, 160, 48, 0.15);
-
-  border-radius: var(--radius);
-
-  background: rgba(232, 160, 48, 0.06);
-
-  font-family: var(--mono);
-
-  font-size: 13px;
-
-  color: var(--amber2);
-
-  letter-spacing: 0.02em;
-}
-
-
-/* ------------------------------------------------------------
-   Mini project cards
-   ------------------------------------------------------------ */
-
-.mini-card {
   display: block;
 
-  padding:
-    var(--space-5) var(--space-6);
-
-  background: var(--bg3);
-
-  border: 1px solid var(--border);
-
-  border-radius: var(--radius2);
-
-  text-decoration: none;
-
-  transition: border-color 0.2s ease;
+  transform: scale(1.6) translateX(2%);
+  transform-origin: center;
 }
 
 
-.mini-card:hover {
-  border-color: var(--border2);
+.media-aeration {
+  background-image:
+    linear-gradient(135deg,
+      rgba(48, 72, 61, 0.14),
+      rgba(28, 33, 29, 0.08)),
+    url("../images/project-aeration.jpg");
 }
 
 
-.mini-card-label {
-  margin-bottom: var(--space-2);
+.project-media-dispersion {
+  min-height: 620px;
 
-  font-family: var(--mono);
+  overflow: hidden;
 
-  font-size: 10px;
-
-  color: var(--teal);
-
-  letter-spacing: 0.16em;
-
-  text-transform: uppercase;
+  background: #737c83;
 }
 
 
-.mini-card h4 {
-  margin-bottom: var(--space-2);
+.project-media-dispersion img {
+  width: 100%;
+  height: 100%;
 
-  font-family: var(--serif);
+  object-fit: cover;
+  object-position: center;
 
-  font-size: 1.05rem;
-  line-height: 1.3;
-
-  color: var(--text);
+  display: block;
 }
 
 
-.mini-card p {
-  font-size: 13px;
+.project-media-forecast {
+  min-height: 0;
+  height: auto;
 
-  color: var(--text2);
+  align-self: center;
 
-  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: transparent;
 }
 
 
-.mini-card-arrow {
+.project-media-forecast img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
   display: block;
 
-  margin-top: var(--space-3);
-
-  font-family: var(--mono);
-
-  font-size: 11px;
-
-  color: var(--amber);
-}
-
-
-/* ------------------------------------------------------------
-   Footer indicator
-   ------------------------------------------------------------ */
-
-.footer-dot {
-  display: inline-block;
-
-  width: 6px;
-  height: 6px;
-
-  margin-right: var(--space-2);
-
-  border-radius: 50%;
-
-  background: var(--teal);
+  transform: none;
 }

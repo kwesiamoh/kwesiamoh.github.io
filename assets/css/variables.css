@@ -1,107 +1,58 @@
 /* ============================================================
    VARIABLES.CSS
-   Global design tokens
+   Editorial engineering design system
    ============================================================ */
 
 :root {
 
-  /* ----------------------------------------------------------
-     Background layers
-     ---------------------------------------------------------- */
+   /* Backgrounds */
+   --paper: #f2efe7;
+   --paper-soft: #e8e5dc;
+   --paper-light: #faf8f2;
 
-  --bg: #0c0f14;
-  --bg2: #111520;
-  --bg3: #161b26;
-  --surface: #1a2030;
+   /* Dark tones */
+   --ink: #1c211d;
+   --ink-soft: #434940;
 
+   /* Brand accents */
+   --green: #30483d;
+   --green-dark: #22352d;
+   --green-light: #8da395;
 
-  /* ----------------------------------------------------------
-     Borders
-     ---------------------------------------------------------- */
+   --amber: #bd6c2c;
+   --amber-soft: #d59a63;
 
-  --border: rgba(255, 255, 255, 0.07);
-  --border2: rgba(255, 255, 255, 0.13);
+   /* Lines */
+   --line: rgba(28, 33, 29, 0.16);
+   --line-light: rgba(255, 255, 255, 0.24);
 
+   /* Typography */
+   --serif: 'DM Serif Display', Georgia, serif;
+   --sans: 'Instrument Sans', Arial, sans-serif;
+   --mono: 'JetBrains Mono', monospace;
 
-  /* ----------------------------------------------------------
-     Accent colors
-     ---------------------------------------------------------- */
+   /* Layout */
+   --content-width: 1240px;
+   --narrow-width: 980px;
 
-  --amber: #e8a030;
-  --amber2: #f5c060;
+   /* Spacing */
+   --space-1: 0.25rem;
+   --space-2: 0.5rem;
+   --space-3: 0.75rem;
+   --space-4: 1rem;
+   --space-5: 1.25rem;
+   --space-6: 1.5rem;
+   --space-8: 2rem;
+   --space-10: 2.5rem;
+   --space-12: 3rem;
+   --space-16: 4rem;
+   --space-20: 5rem;
+   --space-24: 6rem;
+   --space-28: 7rem;
+   --space-32: 8rem;
 
-  --teal: #2ec4a0;
-  --teal2: #5edfc4;
+   /* Shape */
+   --radius-small: 4px;
+   --radius: 10px;
 
-
-  /* ----------------------------------------------------------
-     Neutral colors
-     ---------------------------------------------------------- */
-
-  --slate: #8b9ab5;
-
-
-  /* ----------------------------------------------------------
-     Text
-     ---------------------------------------------------------- */
-
-  --text: #e4e9f2;
-  --text2: #9aaabb;
-
-
-  /* ----------------------------------------------------------
-     Typography
-     ---------------------------------------------------------- */
-
-  --serif: 'DM Serif Display', Georgia, serif;
-  --mono: 'JetBrains Mono', monospace;
-  --sans: 'Instrument Sans', system-ui, sans-serif;
-
-
-  /* ----------------------------------------------------------
-     4-point spacing system
-
-     1  = 4px
-     2  = 8px
-     3  = 12px
-     4  = 16px
-     5  = 20px
-     6  = 24px
-     8  = 32px
-     10 = 40px
-     12 = 48px
-     16 = 64px
-     20 = 80px
-     24 = 96px
-     32 = 128px
-     ---------------------------------------------------------- */
-
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
-  --space-24: 6rem;
-  --space-32: 8rem;
-
-
-  /* ----------------------------------------------------------
-     Border radius
-     ---------------------------------------------------------- */
-
-  --radius: 6px;
-  --radius2: 12px;
-
-
-  /* ----------------------------------------------------------
-     Layout
-     ---------------------------------------------------------- */
-
-  --content-width: 1100px;
 }
