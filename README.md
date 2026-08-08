@@ -1,4 +1,4 @@
-# Ernest Amoh — Process Engineering Portfolio
+# Ernest Amoh
 
 Personal engineering portfolio of Ernest Amoh, a Process Engineer with a Chemical Engineering background, more than three years of manufacturing operations experience, and currently completing an MSc at the University of Stuttgart.
 
