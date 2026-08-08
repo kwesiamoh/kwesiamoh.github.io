@@ -1,25 +1,53 @@
-# Ernest Amoh
+# Ernest Amoh — Process Engineering Portfolio
 
-M.Sc. Environmental & Process Engineering student at the University of Stuttgart, focused on CFD, data analysis, energy systems, emissions modeling, and climate-relevant engineering applications.
+Personal engineering portfolio of Ernest Amoh, a Process Engineer with a Chemical Engineering background, more than three years of manufacturing operations experience, and currently completing an MSc at the University of Stuttgart.
 
-## Technical Focus
+My work combines process engineering fundamentals with simulation, CFD, and engineering data analysis to investigate and improve industrial, environmental, and energy systems.
 
-- Computational Fluid Dynamics: MATLAB, OpenFOAM
-- Data Analysis and Machine Learning: Python, R, pandas, scikit-learn
-- Energy Systems: load forecasting, renewable generation, emissions modeling
-- Numerical Methods: discretization, convergence analysis, transport phenomena
-- Scientific Computing: reproducible workflows, visualization, model validation
+## Engineering Focus
 
-## Selected Projects
+- **Process & Plant Systems:** manufacturing operations, process performance, troubleshooting, process optimization, reaction systems, and maintenance interfaces
+- **Simulation & CFD:** Aspen Plus, OpenFOAM, multiphase flow, atmospheric CFD, turbulence, thermodynamics, and transport phenomena
+- **Energy & Decarbonization:** emissions, combustion, carbon intensity, energy-system analysis, forecasting, and CO₂-related process systems
+- **Environmental Systems:** air quality, pollutant dispersion, wastewater treatment, aeration systems, and environmental monitoring
+- **Engineering Data & Modelling:** Python, MATLAB, PyTorch, XGBoost, scikit-learn, time-series forecasting, and uncertainty analysis
 
-### Gas Turbine Digital Twin
-Physics-informed soft-sensor for gas turbine emissions prediction using thermodynamic feature engineering, uncertainty quantification, and PINN-based modeling.
+## Selected Engineering Work
 
-### Energy Forecasting Pipeline
-End-to-end forecasting workflow for electricity load and renewable generation using feature engineering, SARIMA, XGBoost, and foundation-model-based approaches.
+### Turbine Emissions Soft Sensor
 
-### CFD Fundamentals in MATLAB
-Numerical implementations of canonical CFD problems, including discretization, solver behavior, convergence analysis, and engineering interpretation.
+Physics-informed virtual sensing approach for estimating CO and NOx emissions from gas-turbine operational telemetry when conventional exhaust measurements become unreliable.
 
-### OpenFOAM Case Studies
-CFD case studies involving solver setup, boundary conditions, residual analysis, post-processing, and interpretation of engineering flow fields.
+The project combines thermodynamic feature engineering, machine learning, and uncertainty quantification in an engineering monitoring workflow.
+
+### Activated-Sludge Aeration Tank CFD
+
+OpenFOAM investigation of mixing and dissolved-oxygen distribution in an activated-sludge aeration tank.
+
+Three diffuser configurations are compared under equivalent operating conditions to evaluate circulation, gas distribution, low-velocity zones, turbulence, and aeration uniformity.
+
+### Atmospheric Pollutant Dispersion
+
+Site-resolved CFD investigation of atmospheric pollutant dispersion under varying meteorological conditions across realistic terrain, buildings, and industrial structures.
+
+The workflow combines QGIS and Blender for geometry preparation, OpenFOAM for atmospheric flow and pollutant transport, and ParaView for engineering post-processing.
+
+### German Energy Grid & Carbon Intensity Forecasting
+
+Multi-horizon forecasting and energy-system analysis using German electricity, renewable-generation, weather, and market data.
+
+The project investigates electricity-demand forecasting, uncertainty, carbon-intensity behaviour, and the relationship between renewable generation, residual load, and grid emissions.
+
+## Portfolio
+
+This repository contains the source code for my personal engineering portfolio.
+
+**Live site:** https://kwesiamoh.github.io/
+
+Built with HTML, CSS, and JavaScript, with the portfolio designed around engineering case studies rather than software demonstrations.
+
+## Links
+
+- **LinkedIn:** https://www.linkedin.com/in/ernestamoh/
+- **GitHub:** https://github.com/kwesiamoh
+- **Email:** amohernest@gmail.com
