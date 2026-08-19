@@ -235,6 +235,11 @@
   text-transform: uppercase;
 }
 
+.hero-meta {
+  justify-content: flex-end;
+  text-align: right;
+}
+
 .hero-meta-mark {
   color: var(--amber-soft);
 }
