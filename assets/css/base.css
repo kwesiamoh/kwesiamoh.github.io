@@ -31,6 +31,10 @@ body.menu-open {
   overflow: hidden;
 }
 
+body.lightbox-open {
+  overflow: hidden;
+}
+
 img,
 picture,
 svg,
