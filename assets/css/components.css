@@ -1,0 +1,220 @@
+/* ============================================================
+   COMPONENTS.CSS
+   Buttons, links and media treatments
+   ============================================================ */
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.8rem 1.35rem;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--amber);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #a85d25;
+}
+
+.btn-light {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+}
+
+.btn-light:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--green);
+}
+
+.text-link::after {
+  content: '';
+  width: 1.5rem;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0.55);
+  transform-origin: left center;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.text-link:hover::after {
+  transform: scaleX(1);
+}
+
+.text-link.muted {
+  color: var(--ink-soft);
+}
+
+.project-media {
+  position: relative;
+  min-height: 34rem;
+  overflow: hidden;
+  border-radius: var(--radius-large);
+  background: var(--green);
+  box-shadow: 0 24px 60px rgba(28, 33, 29, 0.08);
+}
+
+.project-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(18, 27, 22, 0.01), rgba(18, 27, 22, 0.12));
+}
+
+.project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.1s var(--ease-out);
+}
+
+.project-media-wrap:hover .project-media img {
+  transform: scale(1.018);
+}
+
+.project-media-dashboard,
+.project-media-aeration,
+.project-media-forecast {
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  background: #e7e5de;
+}
+
+.project-gallery-track,
+.project-gallery-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.project-gallery-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-medium) var(--ease-standard), visibility 0s linear var(--duration-medium);
+}
+
+.project-gallery-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.project-gallery-ui {
+  position: absolute;
+  z-index: 2;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #fff;
+  font-family: var(--mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.project-gallery-caption,
+.project-gallery-controls {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(18, 27, 22, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.project-gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  pointer-events: auto;
+}
+
+.project-gallery-controls button {
+  display: grid;
+  width: 1.8rem;
+  aspect-ratio: 1;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-gallery:not(.has-multiple) .project-gallery-ui {
+  display: none;
+}
+
+.project-media-dashboard img,
+.project-media-aeration img,
+.project-media-forecast img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-media-dispersion {
+  min-height: min(70svh, 48rem);
+  background: #e7e5de;
+}
+
+.project-media-dispersion img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-media img,
+  .project-media-wrap:hover .project-media img,
+  .btn:hover,
+  .nav-brand:hover {
+    transform: none;
+  }
+}
