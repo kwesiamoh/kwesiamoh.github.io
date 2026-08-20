@@ -16,7 +16,7 @@ My work combines process engineering fundamentals with simulation, CFD, and engi
 
 ### Turbine Emissions Soft Sensor
 
-Physics-informed virtual sensing approach for estimating CO and NOx emissions from gas-turbine operational telemetry when conventional exhaust measurements become unreliable.
+Physics-constrained estimation of CO and NOx emissions from operational telemetry when conventional exhaust measurements become unreliable.
 
 The project combines thermodynamic feature engineering, machine learning, and uncertainty quantification in an engineering monitoring workflow.
 
