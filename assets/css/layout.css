@@ -436,8 +436,7 @@
 }
 
 .project-media-wrap {
-  position: sticky;
-  top: 96px;
+  align-self: center;
   min-width: 0;
 }
 
