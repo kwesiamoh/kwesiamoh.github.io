@@ -61,8 +61,8 @@
   --space-28: 7rem;
   --space-32: 8rem;
 
-  --section-space: clamp(5.5rem, 9vw, 10rem);
-  --section-space-small: clamp(4rem, 6vw, 6.5rem);
+  --section-space: clamp(4.5rem, 7vw, 6rem);
+  --section-space-small: clamp(3.5rem, 5vw, 5rem);
   --grid-gap: clamp(2rem, 4.5vw, 5.5rem);
   --content-gap: clamp(1.5rem, 3vw, 3.5rem);
 

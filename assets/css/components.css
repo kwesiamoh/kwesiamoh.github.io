@@ -203,7 +203,8 @@
 }
 
 .project-media-dispersion {
-  min-height: min(70svh, 48rem);
+  min-height: 0;
+  aspect-ratio: 16 / 10;
   background: #e7e5de;
 }
 
