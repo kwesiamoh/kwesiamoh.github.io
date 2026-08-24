@@ -574,6 +574,10 @@
   font-size: var(--text-card-title);
 }
 
+.toolkit-group:last-child h3 {
+  transform: translateY(-0.52em);
+}
+
 .toolkit-group p {
   font-family: var(--mono);
   font-size: calc(var(--text-sm) - 1.5px);
