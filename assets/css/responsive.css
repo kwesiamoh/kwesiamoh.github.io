@@ -214,14 +214,6 @@
     max-width: 10ch;
   }
 
-  .hero-index span:first-child {
-    display: none;
-  }
-
-  .hero-index {
-    justify-content: flex-end;
-  }
-
   .capability-grid,
   .toolkit-grid {
     grid-template-columns: 1fr;
@@ -251,6 +243,10 @@
   .capability-number,
   .toolkit-index {
     margin-bottom: 2rem;
+  }
+
+  .toolkit-group h3 {
+    min-height: 0;
   }
 
   .project-media {

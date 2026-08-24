@@ -33,8 +33,10 @@
   /* Fluid typography */
   --text-xs: clamp(0.62rem, 0.58rem + 0.10vw, 0.70rem);
   --text-sm: clamp(0.78rem, 0.74rem + 0.14vw, 0.90rem);
+  --text-support: clamp(0.82rem, 0.78rem + 0.15vw, 0.96rem);
   --text-body: clamp(0.98rem, 0.94rem + 0.16vw, 1.08rem);
   --text-lead: clamp(1.08rem, 0.98rem + 0.32vw, 1.34rem);
+  --text-card-title: clamp(1.35rem, 1.05rem + 0.8vw, 1.9rem);
   --text-h3: clamp(1.55rem, 1.18rem + 1.2vw, 2.5rem);
   --text-h2: clamp(2.65rem, 1.7rem + 3.25vw, 5.35rem);
   --text-hero: clamp(3.55rem, 1.75rem + 6.6vw, 7.9rem);
