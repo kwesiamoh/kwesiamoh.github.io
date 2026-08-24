@@ -313,13 +313,14 @@
 
 .statement-lead {
   max-width: 27rem;
-  font-size: var(--text-lead);
+  font-size: calc(var(--text-lead) - 0.1667rem - 1.5px);
   line-height: 1.5;
 }
 
 .statement-body {
   max-width: 35rem;
   color: var(--ink-soft);
+  font-size: calc(var(--text-body) - 0.1667rem - 1.5px);
 }
 
 .statement-body p + p {
@@ -472,7 +473,7 @@
   max-width: 35rem;
   margin-bottom: clamp(2rem, 4vw, 3.5rem);
   color: var(--ink-soft);
-  font-size: var(--text-lead);
+  font-size: calc(var(--text-lead) - 0.1667rem - 1.5px);
   line-height: 1.55;
 }
 
@@ -647,6 +648,7 @@
 .contact-copy p {
   margin-bottom: clamp(2rem, 4vw, 3rem);
   color: rgba(255, 255, 255, 0.70);
+  font-size: calc(var(--text-body) - 0.1667rem - 1.5px);
 }
 
 .contact-links {
