@@ -217,8 +217,8 @@
                 <figure class="project-gallery-slide is-active"
                   data-gallery-label="Executive Overview: Enterprise performance at a glance">
                   <img src="assets/images/manufacturing-intelligence-executive-overview.png"
-                    alt="Executive overview showing enterprise manufacturing performance at a glance"
-                    loading="lazy" decoding="async">
+                    alt="Executive overview showing enterprise manufacturing performance at a glance" loading="lazy"
+                    decoding="async">
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="Production Performance: OEE, attainment and forecast">
@@ -271,25 +271,28 @@
             <h3>Enterprise Manufacturing Intelligence Platform</h3>
 
             <p class="project-lead">
-              A multi-site manufacturing intelligence platform integrating production, OEE, energy, quality,
-              reliability, and predictive analytics into a governed PostgreSQL and Power BI environment.
+              A six-site manufacturing intelligence platform that brings production, downtime, energy, quality,
+              maintenance, and equipment telemetry into one decision layer, combining OEE and loss analysis with
+              forecasting, anomaly detection, and predictive maintenance.
             </p>
 
             <div class="project-detail">
               <div>
                 <span class="detail-label">Engineering Problem</span>
                 <p>
-                  Multi-site manufacturers use production, maintenance, quality, and energy systems with different
-                  structures and KPI definitions. The challenge is to reconcile them into one governed model for
-                  consistent cross-site performance analysis.
+                  Multi-site operations generate millions of records across systems built for different purposes, time
+                  scales, and KPI definitions. The challenge was to reconcile them into a trusted enterprise model where
+                  performance, losses, energy use, reliability, and data quality could be compared consistently across
+                  sites and production lines.
                 </p>
               </div>
               <div>
                 <span class="detail-label">Approach</span>
                 <p>
-                  Built a batch-oriented manufacturing intelligence platform using Python, PostgreSQL, Power BI, and
-                  AWS-ready infrastructure to integrate enterprise operations and industrial reference data for OEE,
-                  losses, energy, reliability, quality, forecasting, and anomaly analysis.
+                  Built a governed Python and PostgreSQL data platform with Power BI reporting and AWS-ready
+                  infrastructure. The platform integrates enterprise operations with industrial reference data, adds
+                  automated data-quality controls, and extends historical performance analysis into forecasting,
+                  anomaly detection, and early-warning analytics.
                 </p>
               </div>
             </div>
@@ -343,31 +346,29 @@
               <span>Wastewater · Multiphase CFD</span>
             </div>
 
-            <h3>Mixing, Dissolved Oxygen &amp; Biodegradable Substrate Reduction in an Activated-Sludge Aeration Tank
-            </h3>
+            <h3>Multiphase Aeration Hydrodynamics &amp; Treatment Performance</h3>
 
             <p class="project-lead">
-              Numerical comparison of diffuser arrangements to investigate
-              how aeration layout influences liquid circulation,
-              gas distribution, oxygen transfer, dissolved oxygen, and biodegradable substrate distribution.
+              A multiphase CFD study showing how diffuser placement changes circulation, gas distribution, oxygen
+              transfer, dissolved oxygen, and biodegradable substrate removal, even when total airflow is held
+              constant.
             </p>
 
             <div class="project-detail">
               <div>
                 <span class="detail-label">Engineering Problem</span>
                 <p>
-                  Equal airflow can produce different in-tank conditions,
-                  because diffuser placement changes circulation patterns,
-                  gas distribution, oxygen-transfer regions, and dissolved-oxygen distribution.
+                  The same aeration rate does not guarantee the same treatment conditions. Diffuser layout can create
+                  uneven circulation, oxygen-transfer zones, and low-DO regions that directly affect biological
+                  treatment performance.
                 </p>
               </div>
               <div>
                 <span class="detail-label">Approach</span>
                 <p>
-                  Three diffuser configurations, distributed, central, and lateral,
-                  are compared under the same tank geometry, hydraulic conditions,
-                  and total airflow. Time-averaged aeration fields are coupled with
-                  a reduced ASM1 model to compare dissolved oxygen and modeled biodegradable substrate reduction.
+                  Compared distributed, central, and lateral diffuser layouts under identical tank geometry,
+                  hydraulics, and total airflow. Time-averaged multiphase aeration fields were coupled with a reduced
+                  ASM1 formulation to evaluate dissolved oxygen and biodegradable substrate reduction.
                 </p>
               </div>
             </div>
@@ -502,27 +503,27 @@
               <span>Energy Systems · Forecasting</span>
             </div>
 
-            <h3>German Energy Grid &amp; Carbon Intensity Forecasting</h3>
+            <h3>German Grid Demand &amp; Carbon Intensity Forecasting</h3>
 
             <p class="project-lead">
-              Multi-horizon forecasting workflow combining German power,
-              weather and market data to investigate electricity demand
-              and carbon-intensity prediction.
+              A multi-horizon forecasting study combining German electricity-system, weather, and market data to
+              predict grid demand and carbon intensity as forecast uncertainty grows with time.
             </p>
 
             <div class="project-detail">
               <div>
-                <span class="detail-label">Data</span>
+                <span class="detail-label">Forecasting Problem</span>
                 <p>
-                  Approximately 80,000 hourly observations across
-                  energy-system, weather and market variables.
+                  Electricity demand and carbon intensity respond to weather, generation mix, market conditions, and
+                  time-dependent behavior. The challenge is to maintain useful forecast accuracy as the prediction
+                  horizon extends.
                 </p>
               </div>
               <div>
                 <span class="detail-label">Approach</span>
                 <p>
-                  Benchmarked recursive XGBoost models against
-                  zero-shot Chronos-T5 across multiple forecast horizons.
+                  Built a forecasting pipeline over approximately 80,000 hourly observations and benchmarked recursive
+                  XGBoost against zero-shot Chronos-T5 across multiple forecast horizons.
                 </p>
               </div>
             </div>
@@ -572,28 +573,24 @@
             <h3>Virtual Soft-Sensor for Turbine Emissions Monitoring</h3>
 
             <p class="project-lead">
-              Physics-constrained estimation of CO and NOx emissions
-              from operational telemetry when conventional exhaust
-              measurements become unreliable.
+              A physics-constrained soft sensor for estimating CO and NOx from operating telemetry when direct exhaust
+              measurements become unavailable or unreliable.
             </p>
 
             <div class="project-detail">
               <div>
                 <span class="detail-label">Engineering Problem</span>
                 <p>
-                  Conventional emissions monitoring systems can experience
-                  calibration drift, maintenance downtime, or measurement
-                  interruptions, creating gaps in emissions visibility during
-                  plant operation.
+                  Calibration drift, analyzer maintenance, and measurement interruptions can create blind spots in
+                  emissions monitoring while the turbine continues operating.
                 </p>
               </div>
               <div>
                 <span class="detail-label">Approach</span>
                 <p>
-                  Developed an uncertainty-aware soft-sensing framework
-                  combining physics-constrained neural modelling, conformal
-                  prediction, and thermodynamically motivated feature
-                  engineering using existing operational variables.
+                  Developed an uncertainty-aware neural soft sensor combining physics-constrained modelling,
+                  thermodynamically motivated features, and conformal prediction to estimate emissions from existing
+                  operational variables while quantifying prediction uncertainty.
                 </p>
               </div>
             </div>
