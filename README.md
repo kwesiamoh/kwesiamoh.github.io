@@ -10,21 +10,21 @@ My work combines process engineering fundamentals with simulation, CFD, and engi
 - **Simulation & CFD:** Aspen Plus, OpenFOAM, multiphase flow, atmospheric CFD, turbulence, thermodynamics, and transport phenomena
 - **Energy & Decarbonization:** emissions, combustion, carbon intensity, energy-system analysis, forecasting, and CO₂-related process systems
 - **Environmental Systems:** air quality, pollutant dispersion, wastewater treatment, aeration systems, and environmental monitoring
-- **Engineering Data & Modelling:** Python, MATLAB, PyTorch, XGBoost, scikit-learn, time-series forecasting, and uncertainty analysis
+- **Engineering Data & Modelling:** Python, PostgreSQL, Power BI, AWS-ready infrastructure, Terraform, MATLAB, PyTorch, XGBoost, scikit-learn, data-quality controls, time-series forecasting, and uncertainty analysis
 
 ## Selected Engineering Work
 
-### Turbine Emissions Soft Sensor
+### Enterprise Manufacturing Intelligence Platform
 
-Physics-constrained estimation of CO and NOx emissions from operational telemetry when conventional exhaust measurements become unreliable.
+A six-site manufacturing intelligence platform that brings production, downtime, energy, quality, maintenance, and equipment telemetry into one governed decision layer.
 
-The project combines thermodynamic feature engineering, machine learning, and uncertainty quantification in an engineering monitoring workflow.
+Python and PostgreSQL pipelines integrate synthetic enterprise operating history with public industrial reference data. Power BI reporting combines OEE and loss analysis with energy, reliability, data-quality, forecasting, anomaly-detection, and compressor early-warning workflows. The infrastructure is AWS-ready; the repository does not represent a live AWS deployment.
 
-### Activated-Sludge Aeration Tank CFD
+### Multiphase Aeration Hydrodynamics & Treatment Performance
 
-OpenFOAM investigation of mixing and dissolved-oxygen distribution in an activated-sludge aeration tank.
+A multiphase CFD study showing how diffuser placement changes circulation, gas distribution, oxygen transfer, dissolved oxygen, and biodegradable substrate removal, even when total airflow is held constant.
 
-Three diffuser configurations are compared under equivalent operating conditions to evaluate circulation, gas distribution, low-velocity zones, turbulence, and aeration uniformity.
+Distributed, central, and lateral diffuser layouts are compared under identical tank geometry, hydraulics, and total airflow. Time-averaged multiphase fields are coupled with a reduced ASM1 formulation to evaluate treatment conditions.
 
 ### Atmospheric Pollutant Dispersion
 
@@ -32,19 +32,23 @@ Site-resolved CFD investigation of atmospheric pollutant dispersion under varyin
 
 The workflow combines QGIS and Blender for geometry preparation, OpenFOAM for atmospheric flow and pollutant transport, and ParaView for engineering post-processing.
 
-### German Energy Grid & Carbon Intensity Forecasting
+### German Grid Demand & Carbon Intensity Forecasting
 
-Multi-horizon forecasting and energy-system analysis using German electricity, renewable-generation, weather, and market data.
+A multi-horizon forecasting study combining German electricity-system, weather, and market data to predict grid demand and carbon intensity as forecast uncertainty grows with time.
 
-The project investigates electricity-demand forecasting, uncertainty, carbon-intensity behaviour, and the relationship between renewable generation, residual load, and grid emissions.
+The forecasting pipeline covers approximately 80,000 hourly observations and benchmarks recursive XGBoost against zero-shot Chronos-T5 across multiple forecast horizons.
+
+### Virtual Soft-Sensor for Turbine Emissions Monitoring
+
+A physics-constrained soft sensor for estimating CO and NOx from operating telemetry when direct exhaust measurements become unavailable or unreliable.
+
+The project combines physics-constrained neural modelling, thermodynamically motivated features, and conformal prediction to estimate emissions while quantifying prediction uncertainty.
 
 ## Portfolio
 
 This repository contains the source code for my personal engineering portfolio.
 
 **Live site:** https://kwesiamoh.github.io/
-
-Built with HTML, CSS, and JavaScript, with the portfolio designed around engineering case studies rather than software demonstrations.
 
 ## Links
 
