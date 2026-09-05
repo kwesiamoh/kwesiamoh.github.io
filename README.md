@@ -34,9 +34,9 @@ The workflow combines QGIS and Blender for geometry preparation, OpenFOAM for at
 
 ### German Grid Demand & Carbon Intensity Forecasting
 
-A multi-horizon forecasting study combining German electricity-system, weather, and market data to predict grid demand and carbon intensity as forecast uncertainty grows with time.
+A multi-horizon forecasting study of the German electricity system, using power-system and weather data to forecast grid demand, renewable generation, and carbon intensity across a 24-hour horizon.
 
-The forecasting pipeline covers approximately 80,000 hourly observations and benchmarks recursive XGBoost against zero-shot Chronos-T5 across multiple forecast horizons.
+The end-to-end hourly pipeline uses OPSD, SMARD, and Meteostat data to compare seasonal baselines, SARIMA, recursive XGBoost, and zero-shot Chronos, TimesFM, and Moirai across nine targets. The results show that no single approach dominates: XGBoost is strongest for one-hour load forecasting, while foundation models remain highly competitive across renewable-generation targets and longer load horizons.
 
 ### Virtual Soft-Sensor for Turbine Emissions Monitoring
 
