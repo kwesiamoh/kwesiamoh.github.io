@@ -467,30 +467,43 @@
         <article class="project-feature reverse">
           <div class="project-media-wrap" data-reveal>
             <div class="project-media project-media-forecast project-gallery" data-gallery
-              aria-label="Energy forecasting project images">
+              aria-label="German electricity forecasting project images">
               <div class="project-gallery-track">
-                <figure class="project-gallery-slide is-active" data-gallery-label="Forecast uncertainty over 48 hours">
-                  <img src="assets/images/project-4-01.png" alt="Forecast uncertainty over a 48-hour window"
+                <figure class="project-gallery-slide is-active"
+                  data-gallery-label="German electricity system overview">
+                  <img src="assets/images/project-4-01.png"
+                    alt="German electricity dataset showing load, selected generation components, and train, validation, and test periods"
                     loading="lazy" decoding="async">
                 </figure>
-                <figure class="project-gallery-slide" data-gallery-label="German grid and renewable generation trends">
+                <figure class="project-gallery-slide"
+                  data-gallery-label="Rolling h=1 load forecasts">
                   <img src="assets/images/project-4-02.png"
-                    alt="German electricity grid and renewable generation trends" loading="lazy" decoding="async">
+                    alt="Rolling one-hour-ahead German load forecasts from XGBoost, Chronos, TimesFM, and Moirai compared with actual load"
+                    loading="lazy" decoding="async">
                 </figure>
-                <figure class="project-gallery-slide" data-gallery-label="Carbon intensity versus residual load">
+                <figure class="project-gallery-slide"
+                  data-gallery-label="Carbon intensity vs residual load">
                   <img src="assets/images/project-4-03.png"
-                    alt="Carbon intensity compared with residual electricity load" loading="lazy" decoding="async">
+                    alt="Density relationship between German electricity carbon intensity and residual load"
+                    loading="lazy" decoding="async">
                 </figure>
-                <figure class="project-gallery-slide" data-gallery-label="Carbon-aware load shifting opportunities">
-                  <img src="assets/images/project-4-04.png" alt="Carbon-aware electricity load shifting opportunities"
+                <figure class="project-gallery-slide"
+                  data-gallery-label="Seasonal and diurnal carbon profile">
+                  <img src="assets/images/project-4-04.png"
+                    alt="Heatmap of German electricity carbon intensity by month and hour of day" loading="lazy"
+                    decoding="async">
+                </figure>
+                <figure class="project-gallery-slide" data-gallery-label="Nine-target MAE benchmark">
+                  <img src="assets/images/project-4-05.png"
+                    alt="FULL h=1 MAE benchmark across nine electricity and carbon-intensity forecast targets"
                     loading="lazy" decoding="async">
                 </figure>
               </div>
               <div class="project-gallery-ui">
-                <span class="project-gallery-caption" aria-live="polite">Forecast uncertainty over 48 hours</span>
+                <span class="project-gallery-caption" aria-live="polite">German electricity system overview</span>
                 <div class="project-gallery-controls">
                   <button type="button" data-gallery-prev aria-label="Previous project image">&#8592;</button>
-                  <span class="project-gallery-count">01 / 04</span>
+                  <span class="project-gallery-count">01 / 05</span>
                   <button type="button" data-gallery-next aria-label="Next project image">&#8594;</button>
                 </div>
               </div>
@@ -500,36 +513,40 @@
           <div class="project-content" data-reveal>
             <div class="project-meta">
               <span>04</span>
-              <span>Energy Systems · Forecasting</span>
+              <span>Energy Systems · Time-Series Forecasting</span>
             </div>
 
             <h3>German Grid Demand &amp; Carbon Intensity Forecasting</h3>
 
             <p class="project-lead">
-              A multi-horizon forecasting study combining German electricity-system, weather, and market data to
-              predict grid demand and carbon intensity as forecast uncertainty grows with time.
+              A multi-horizon forecasting study of the German electricity system, using power-system and weather data
+              to forecast grid demand, renewable generation, and carbon intensity across a 24-hour horizon.
             </p>
 
             <div class="project-detail">
               <div>
                 <span class="detail-label">Forecasting Problem</span>
                 <p>
-                  Electricity demand and carbon intensity respond to weather, generation mix, market conditions, and
-                  time-dependent behavior. The challenge is to maintain useful forecast accuracy as the prediction
-                  horizon extends.
+                  Electricity demand, renewable generation, and carbon intensity evolve differently with weather,
+                  generation mix, and recurring system behavior. The challenge was to compare forecasting approaches
+                  consistently while preserving temporal causality and understanding how accuracy changes as the
+                  prediction horizon extends.
                 </p>
               </div>
               <div>
                 <span class="detail-label">Approach</span>
                 <p>
-                  Built a forecasting pipeline over approximately 80,000 hourly observations and benchmarked recursive
-                  XGBoost against zero-shot Chronos-T5 across multiple forecast horizons.
+                  Built an end-to-end hourly forecasting pipeline from OPSD, SMARD, and Meteostat data, then compared
+                  seasonal baselines, SARIMA, recursive XGBoost, and zero-shot Chronos, TimesFM, and Moirai across nine
+                  targets. The results showed that no single approach dominates: XGBoost was strongest for one-hour
+                  load forecasting, while foundation models remained highly competitive across renewable-generation
+                  targets and longer load horizons.
                 </p>
               </div>
             </div>
 
             <div class="project-footer">
-              <div class="project-tech">Python · XGBoost · Chronos-T5 · Energy Data</div>
+              <div class="project-tech">Python · XGBoost · Chronos · TimesFM · Moirai</div>
               <a href="https://github.com/kwesiamoh/energy-forecast" target="_blank" rel="noopener noreferrer"
                 class="text-link">View project ↗</a>
             </div>
