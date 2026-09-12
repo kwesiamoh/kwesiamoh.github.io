@@ -1,53 +1,73 @@
 /* ============================================================
    VARIABLES.CSS
-   Fluid editorial engineering design system
+   Semantic tokens for the editorial engineering system
    ============================================================ */
 
 :root {
-  /* Backgrounds */
-  --paper: #f2efe7;
-  --paper-soft: #e8e5dc;
-  --paper-light: #faf8f2;
+  /* Surfaces */
+  --surface-primary: #f2efe7;
+  --surface-secondary: #e8e5dc;
+  --surface-elevated: #faf8f2;
+  --surface-control: rgba(250, 248, 242, 0.88);
 
-  /* Dark tones */
-  --ink: #1c211d;
-  --ink-soft: #434940;
+  /* Content */
+  --text-primary: #1c211d;
+  --text-secondary: #495047;
+  --separator: rgba(28, 33, 29, 0.18);
+  --separator-strong: rgba(28, 33, 29, 0.32);
 
-  /* Brand accents */
+  /* Brand and functional color */
   --green: #30483d;
   --green-dark: #22352d;
   --green-light: #8da395;
-  --amber: #bd6c2c;
-  --amber-soft: #d59a63;
+  --accent-functional: #914617;
+  --accent-functional-hover: #783811;
+  --accent-decorative: #bd6c2c;
+  --accent-decorative-soft: #d9a36f;
+  --focus-ring: #cf7b36;
 
-  /* Lines */
-  --line: rgba(28, 33, 29, 0.16);
-  --line-strong: rgba(28, 33, 29, 0.28);
-  --line-light: rgba(255, 255, 255, 0.24);
+  /* Dark surfaces */
+  --dark-surface: #22352d;
+  --dark-surface-text: #fbfaf6;
+  --dark-surface-secondary: rgba(251, 250, 246, 0.76);
+  --dark-separator: rgba(255, 255, 255, 0.26);
+
+  /* Compatibility aliases retained for the existing architecture */
+  --paper: var(--surface-primary);
+  --paper-soft: var(--surface-secondary);
+  --paper-light: var(--surface-elevated);
+  --ink: var(--text-primary);
+  --ink-soft: var(--text-secondary);
+  --amber: var(--accent-functional);
+  --amber-soft: var(--accent-decorative-soft);
+  --line: var(--separator);
+  --line-strong: var(--separator-strong);
+  --line-light: var(--dark-separator);
 
   /* Typography */
   --serif: 'DM Serif Display', Georgia, serif;
   --sans: 'Instrument Sans', Arial, sans-serif;
   --mono: 'JetBrains Mono', monospace;
-
-  /* Fluid typography */
-  --text-xs: clamp(0.62rem, 0.58rem + 0.10vw, 0.70rem);
-  --text-sm: clamp(0.78rem, 0.74rem + 0.14vw, 0.90rem);
-  --text-support: clamp(0.82rem, 0.78rem + 0.15vw, 0.96rem);
-  --text-body: clamp(0.98rem, 0.94rem + 0.16vw, 1.08rem);
-  --text-lead: clamp(1.08rem, 0.98rem + 0.32vw, 1.34rem);
-  --text-card-title: clamp(1.35rem, 1.05rem + 0.8vw, 1.9rem);
-  --text-h3: clamp(1.55rem, 1.18rem + 1.2vw, 2.5rem);
-  --text-h2: clamp(2.65rem, 1.7rem + 3.25vw, 5.35rem);
-  --text-hero: clamp(3.55rem, 1.75rem + 6.6vw, 7.9rem);
+  --text-xs: clamp(0.75rem, 0.73rem + 0.08vw, 0.8rem);
+  --text-compact: clamp(0.78125rem, 0.7575rem + 0.04vw, 0.8125rem);
+  --text-sm: 0.875rem;
+  --text-support: clamp(0.875rem, 0.8575rem + 0.04vw, 0.90625rem);
+  --text-emphasis: clamp(0.90625rem, 0.8875rem + 0.025vw, 0.9375rem);
+  --text-body: clamp(1rem, 0.96rem + 0.08vw, 1.06rem);
+  --text-lead: clamp(0.921875rem, 0.9075rem + 0.06vw, 0.96875rem);
+  --text-card-title: clamp(1.4rem, 1.12rem + 0.65vw, 1.8rem);
+  --text-h3: clamp(1.65rem, 1.28rem + 0.9vw, 2.25rem);
+  --text-h2: clamp(2.5rem, 1.72rem + 2.4vw, 4.4rem);
+  --text-hero: clamp(3rem, 1.45rem + 5.1vw, 6.25rem);
 
   /* Layout */
   --content-width: 1320px;
   --wide-width: 1500px;
   --narrow-width: 980px;
+  --nav-height: 72px;
   --page-gutter: clamp(1.25rem, 3.8vw, 4rem);
 
-  /* Fluid spacing */
+  /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -62,21 +82,22 @@
   --space-24: 6rem;
   --space-28: 7rem;
   --space-32: 8rem;
-
-  --section-space: clamp(4.5rem, 7vw, 6rem);
+  --section-space: clamp(4.5rem, 7vw, 6.5rem);
   --section-space-small: clamp(3.5rem, 5vw, 5rem);
   --grid-gap: clamp(2rem, 4.5vw, 5.5rem);
   --content-gap: clamp(1.5rem, 3vw, 3.5rem);
 
   /* Shape */
-  --radius-small: 6px;
+  --radius-small: 7px;
   --radius: 14px;
-  --radius-large: 24px;
+  --radius-large: 22px;
+  --radius-control: 18px;
+  --radius-control-large: 20px;
 
   /* Motion */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
-  --duration-fast: 220ms;
-  --duration-medium: 650ms;
-  --duration-slow: 950ms;
+  --duration-fast: 180ms;
+  --duration-medium: 360ms;
+  --duration-slow: 520ms;
 }

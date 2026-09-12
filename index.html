@@ -24,6 +24,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/images/hero-process-plant.jpg" fetchpriority="high">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
@@ -216,38 +217,57 @@
               <div class="project-gallery-track">
                 <figure class="project-gallery-slide is-active"
                   data-gallery-label="Executive Overview: Enterprise performance at a glance">
-                  <img src="assets/images/manufacturing-intelligence-executive-overview.png"
-                    alt="Executive overview showing enterprise manufacturing performance at a glance" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Executive Overview image full size">
+                    <img src="assets/images/manufacturing-intelligence-executive-overview.png" width="1834"
+                      height="1035" alt="Executive overview showing enterprise manufacturing performance at a glance"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="Production Performance: OEE, attainment and forecast">
-                  <img src="assets/images/manufacturing-intelligence-production-performance.png"
-                    alt="Production performance dashboard showing OEE, attainment and forecast" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Production Performance image full size">
+                    <img src="assets/images/manufacturing-intelligence-production-performance.png" width="1836"
+                      height="1033" alt="Production performance dashboard showing OEE, attainment and forecast"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="Loss &amp; Opportunity: Loss drivers and opportunity">
-                  <img src="assets/images/manufacturing-intelligence-loss-opportunity.png"
-                    alt="Loss and opportunity dashboard showing manufacturing loss drivers and modeled opportunity"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Loss and Opportunity image full size">
+                    <img src="assets/images/manufacturing-intelligence-loss-opportunity.png" width="1840"
+                      height="1033"
+                      alt="Loss and opportunity dashboard showing manufacturing loss drivers and modeled opportunity"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="Energy &amp; Utilities: Energy performance and anomalies">
-                  <img src="assets/images/manufacturing-intelligence-energy-utilities.png"
-                    alt="Energy and utilities dashboard showing energy performance and anomalies" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Energy and Utilities image full size">
+                    <img src="assets/images/manufacturing-intelligence-energy-utilities.png" width="1837" height="1033"
+                      alt="Energy and utilities dashboard showing energy performance and anomalies" loading="lazy"
+                      decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="Reliability &amp; Maintenance: Failures, downtime and reliability">
-                  <img src="assets/images/manufacturing-intelligence-reliability-maintenance.png"
-                    alt="Reliability and maintenance dashboard showing failures, downtime and reliability"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Reliability and Maintenance image full size">
+                    <img src="assets/images/manufacturing-intelligence-reliability-maintenance.png" width="1723"
+                      height="967"
+                      alt="Reliability and maintenance dashboard showing failures, downtime and reliability"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="Data Quality: Data quality and validation status">
-                  <img src="assets/images/manufacturing-intelligence-data-quality.png"
-                    alt="Data quality dashboard showing validation and quality status" loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button" aria-label="Open Data Quality image full size">
+                    <img src="assets/images/manufacturing-intelligence-data-quality.png" width="1716" height="964"
+                      alt="Data quality dashboard showing validation and quality status" loading="lazy" decoding="async">
+                  </button>
                 </figure>
               </div>
               <div class="project-gallery-ui">
@@ -312,21 +332,33 @@
               <div class="project-gallery-track">
                 <figure class="project-gallery-slide is-active"
                   data-gallery-label="Flow Patterns Across Diffuser Layouts">
-                  <img src="assets/images/project-2-01.png"
-                    alt="Flow patterns across wastewater aeration diffuser layouts" loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Flow Patterns Across Diffuser Layouts image full size">
+                    <img src="assets/images/project-2-01.png" width="1920" height="1080"
+                      alt="Flow patterns across wastewater aeration diffuser layouts" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Diffuser Layout Configurations">
-                  <img src="assets/images/project-2-02.png"
-                    alt="Comparison of wastewater aeration diffuser configurations" loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Diffuser Layout Configurations image full size">
+                    <img src="assets/images/project-2-02.png" width="1920" height="1080"
+                      alt="Comparison of wastewater aeration diffuser configurations" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Mean Air Volume Fraction">
-                  <img src="assets/images/project-2-03.png" alt="Time-averaged air distribution in an aeration tank"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Mean Air Volume Fraction image full size">
+                    <img src="assets/images/project-2-03.png" width="1920" height="1080"
+                      alt="Time-averaged air distribution in an aeration tank" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Outlet Biodegradable Substrate COD">
-                  <img src="assets/images/project-2-04.png"
-                    alt="Biodegradable chemical oxygen demand distribution in an aeration tank" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Outlet Biodegradable Substrate COD image full size">
+                    <img src="assets/images/project-2-04.png" width="650" height="450"
+                      alt="Biodegradable chemical oxygen demand distribution in an aeration tank" loading="lazy"
+                      decoding="async">
+                  </button>
                 </figure>
               </div>
               <div class="project-gallery-ui">
@@ -387,29 +419,47 @@
               aria-label="Atmospheric dispersion project images">
               <div class="project-gallery-track">
                 <figure class="project-gallery-slide is-active" data-gallery-label="Simulated industrial stack plume">
-                  <img src="assets/images/project-3-01.png" alt="Simulated industrial stack plume" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Simulated industrial stack plume image full size">
+                    <img src="assets/images/project-3-01.png" width="1920" height="1080"
+                      alt="Simulated industrial stack plume" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="CFD computational domain and mesh">
-                  <img src="assets/images/project-3-02.png" alt="Atmospheric CFD computational domain and mesh"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open CFD computational domain and mesh image full size">
+                    <img src="assets/images/project-3-02.png" width="1920" height="1080"
+                      alt="Atmospheric CFD computational domain and mesh" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Plume spread under varying wind speeds">
-                  <img src="assets/images/project-3-03.png" alt="Pollutant plume spread under varying wind speeds"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Plume spread under varying wind speeds image full size">
+                    <img src="assets/images/project-3-03.png" width="1954" height="1474"
+                      alt="Pollutant plume spread under varying wind speeds" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Transient plume rise and dispersion">
-                  <img src="assets/images/project-3-04.png"
-                    alt="Transient industrial plume rise and atmospheric dispersion" loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Transient plume rise and dispersion image full size">
+                    <img src="assets/images/project-3-04.png" width="2118" height="1769"
+                      alt="Transient industrial plume rise and atmospheric dispersion" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Dispersion under different wind directions">
-                  <img src="assets/images/project-3-05.png"
-                    alt="Atmospheric pollutant dispersion under different wind directions" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Dispersion under different wind directions image full size">
+                    <img src="assets/images/project-3-05.png" width="1920" height="1080"
+                      alt="Atmospheric pollutant dispersion under different wind directions" loading="lazy"
+                      decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="3D industrial site model">
-                  <img src="assets/images/project-3-06.png" alt="Three-dimensional model of the industrial site"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open 3D industrial site model image full size">
+                    <img src="assets/images/project-3-06.png" width="1920" height="1080"
+                      alt="Three-dimensional model of the industrial site" loading="lazy" decoding="async">
+                  </button>
                 </figure>
               </div>
               <div class="project-gallery-ui">
@@ -470,29 +520,44 @@
               aria-label="German electricity forecasting project images">
               <div class="project-gallery-track">
                 <figure class="project-gallery-slide is-active" data-gallery-label="German electricity system overview">
-                  <img src="assets/images/project-4-01.png"
-                    alt="German electricity dataset showing load, selected generation components, and train, validation, and test periods"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open German electricity system overview image full size">
+                    <img src="assets/images/project-4-01.png" width="3634" height="1534"
+                      alt="German electricity dataset showing load, selected generation components, and train, validation, and test periods"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Rolling h=1 load forecasts">
-                  <img src="assets/images/project-4-02.png"
-                    alt="Rolling one-hour-ahead German load forecasts from XGBoost, Chronos, TimesFM, and Moirai compared with actual load"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Rolling h=1 load forecasts image full size">
+                    <img src="assets/images/project-4-02.png" width="3634" height="1535"
+                      alt="Rolling one-hour-ahead German load forecasts from XGBoost, Chronos, TimesFM, and Moirai compared with actual load"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Carbon intensity vs residual load">
-                  <img src="assets/images/project-4-03.png"
-                    alt="Density relationship between German electricity carbon intensity and residual load"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Carbon intensity vs residual load image full size">
+                    <img src="assets/images/project-4-03.png" width="2434" height="1534"
+                      alt="Density relationship between German electricity carbon intensity and residual load"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Seasonal and diurnal carbon profile">
-                  <img src="assets/images/project-4-04.png"
-                    alt="Heatmap of German electricity carbon intensity by month and hour of day" loading="lazy"
-                    decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Seasonal and diurnal carbon profile image full size">
+                    <img src="assets/images/project-4-04.png" width="3028" height="1384"
+                      alt="Heatmap of German electricity carbon intensity by month and hour of day" loading="lazy"
+                      decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide" data-gallery-label="Nine-target MAE benchmark">
-                  <img src="assets/images/project-4-05.png"
-                    alt="FULL h=1 MAE benchmark across nine electricity and carbon-intensity forecast targets"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Nine-target MAE benchmark image full size">
+                    <img src="assets/images/project-4-05.png" width="5227" height="4136"
+                      alt="FULL h=1 MAE benchmark across nine electricity and carbon-intensity forecast targets"
+                      loading="lazy" decoding="async">
+                  </button>
                 </figure>
               </div>
               <div class="project-gallery-ui">
@@ -554,13 +619,20 @@
               <div class="project-gallery-track">
                 <figure class="project-gallery-slide is-active"
                   data-gallery-label="Real-time soft sensor monitoring dashboard">
-                  <img src="assets/images/project-1-01.png" alt="Real-time soft sensor monitoring dashboard"
-                    loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open Real-time soft sensor monitoring dashboard image full size">
+                    <img src="assets/images/project-1-01.png" width="2548" height="1590"
+                      alt="Real-time soft sensor monitoring dashboard" loading="lazy" decoding="async">
+                  </button>
                 </figure>
                 <figure class="project-gallery-slide"
                   data-gallery-label="ML model performance and uncertainty comparison">
-                  <img src="assets/images/project-1-02.png"
-                    alt="Machine-learning model performance and uncertainty comparison" loading="lazy" decoding="async">
+                  <button class="project-gallery-open" type="button"
+                    aria-label="Open ML model performance and uncertainty comparison image full size">
+                    <img src="assets/images/project-1-02.png" width="2337" height="1790"
+                      alt="Machine-learning model performance and uncertainty comparison" loading="lazy"
+                      decoding="async">
+                  </button>
                 </figure>
               </div>
               <div class="project-gallery-ui">
