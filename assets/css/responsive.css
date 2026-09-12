@@ -201,11 +201,32 @@
 @media (max-width: 620px) {
   :root {
     --page-gutter: clamp(1rem, 5vw, 1.4rem);
+    --text-xs: 0.625rem;
+    --text-compact: 0.734375rem;
+    --text-sm: 0.796875rem;
+    --text-support: 0.8125rem;
+    --text-emphasis: 0.84375rem;
+    --text-body: 0.859375rem;
+    --text-lead: 0.875rem;
+    --text-card-title: clamp(1.25rem, calc(0.6786rem + 2.857vw), 1.375rem);
+    --text-h3: clamp(1.625rem, calc(1.0536rem + 2.857vw), 1.75rem);
+    --text-h2: clamp(1.875rem, calc(1.3036rem + 2.857vw), 2rem);
+    --text-hero: clamp(2.25rem, calc(1.107rem + 5.714vw), 2.5rem);
   }
 
   .nav-identity {
     justify-self: start;
-    font-size: 0.8125rem;
+    font-size: 0.6875rem;
+  }
+
+  .nav-toggle,
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .btn,
+  .scroll-cue {
+    font-size: 0.775rem;
   }
 
   .hero-content {
@@ -229,10 +250,27 @@
 
   .hero-description {
     max-width: 36rem;
+    line-height: 1.5;
   }
 
   .hero-index {
     justify-content: flex-start;
+  }
+
+  .section-intro,
+  .capabilities-section .section-intro {
+    font-size: 0.796875rem;
+    line-height: 1.55;
+  }
+
+  .statement-lead {
+    font-size: 0.828125rem;
+    line-height: 1.52;
+  }
+
+  .statement-body {
+    font-size: 0.796875rem;
+    line-height: 1.52;
   }
 
   .capability-grid,
@@ -274,6 +312,31 @@
     min-height: 0;
   }
 
+  .capability-item p,
+  .project-detail p,
+  .education-grid p,
+  .contact-copy p {
+    line-height: 1.55;
+  }
+
+  .project-content h3,
+  .project-feature-wide .project-content h3 {
+    font-size: var(--text-h3);
+    line-height: 1.02;
+  }
+
+  .project-lead {
+    line-height: 1.52;
+  }
+
+  .toolkit-group p {
+    line-height: 1.68;
+  }
+
+  .education-grid h3 {
+    font-size: var(--text-card-title);
+  }
+
   .project-media {
     min-height: 22rem;
     border-radius: 14px;
@@ -297,11 +360,33 @@
     flex-direction: column;
   }
 
+  .project-tech {
+    font-size: 0.671875rem;
+  }
+
+  .project-footer .text-link {
+    font-size: 0.703125rem;
+  }
+
+  .project-gallery-ui,
+  .project-gallery-caption {
+    font-size: 0.671875rem;
+  }
+
+  .project-gallery-count {
+    font-size: 0.640625rem;
+  }
+
   .contact-links a {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.3rem;
     overflow-wrap: anywhere;
+    font-size: 0.7rem;
+  }
+
+  .contact-links a span:first-child {
+    font-size: 0.59375rem;
   }
 
   .contact-orbit {
@@ -313,6 +398,7 @@
     grid-template-columns: 1fr;
     gap: 0.45rem;
     text-align: left;
+    font-size: 0.59375rem;
   }
 
   footer div:nth-child(2),
@@ -333,10 +419,6 @@
 }
 
 @media (max-width: 360px) {
-  :root {
-    --text-hero: 2.72rem;
-  }
-
   .site-nav {
     gap: 0.65rem;
   }
@@ -345,10 +427,6 @@
     gap: 0.45rem;
   }
 
-  .hero-meta,
-  .hero-index {
-    font-size: 0.7rem;
-  }
 }
 
 @media (max-height: 700px) and (max-width: 620px) {
