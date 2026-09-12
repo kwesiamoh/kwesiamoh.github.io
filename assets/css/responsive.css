@@ -108,8 +108,10 @@
   }
 
   .nav-links {
-    position: fixed;
-    inset: var(--nav-height) 0 0;
+    position: absolute;
+    inset: 100% 0 auto;
+    max-height: calc(100vh - var(--nav-height));
+    max-height: calc(100dvh - var(--nav-height));
     display: grid;
     align-content: start;
     gap: 0;
