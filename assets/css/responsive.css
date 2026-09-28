@@ -175,6 +175,11 @@
     gap: 2rem;
   }
 
+  .statement-narrative {
+    max-width: 38rem;
+    padding-top: 0;
+  }
+
   .project-feature,
   .project-feature.reverse {
     grid-template-columns: 1fr;
