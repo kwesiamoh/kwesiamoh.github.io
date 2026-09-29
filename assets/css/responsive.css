@@ -176,6 +176,7 @@
 
   .statement-narrative {
     max-width: 38rem;
+    justify-self: start;
     padding-top: 0;
   }
 
@@ -206,6 +207,10 @@
 
   .education-grid {
     grid-template-columns: 1fr;
+  }
+
+  .education-grid > div:last-child {
+    padding-left: 0;
   }
 
   .project-index {
@@ -296,7 +301,7 @@
 
   .section-intro,
   .capabilities-section .section-intro {
-    font-size: 0.796875rem;
+    font-size: 0.828125rem;
     line-height: 1.55;
   }
 
@@ -306,7 +311,7 @@
   }
 
   .statement-body {
-    font-size: 0.796875rem;
+    font-size: 0.828125rem;
     line-height: 1.52;
   }
 
@@ -349,6 +354,7 @@
   .approach-list li {
     min-height: 2.625rem;
     padding-block: var(--space-2);
+    font-size: 0.828125rem;
   }
 
   .projects-hero {

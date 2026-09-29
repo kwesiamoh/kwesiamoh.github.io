@@ -190,7 +190,7 @@
 .section-intro {
   max-width: 32rem;
   color: var(--text-secondary);
-  font-size: calc(var(--text-sm) + 0.0625rem);
+  font-size: var(--text-emphasis);
   line-height: 1.6;
 }
 
@@ -321,21 +321,23 @@
 }
 
 .statement-narrative {
+  width: 100%;
   max-width: 38rem;
+  justify-self: end;
   padding-top: clamp(2.5rem, 6vw, 6rem);
 }
 
 .statement-lead {
   max-width: 29rem;
-  font-size: calc(var(--text-emphasis) + 0.0625rem);
+  font-size: var(--text-emphasis);
   line-height: 1.6;
 }
 
 .statement-body {
   max-width: 38rem;
-  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 1.4rem;
   color: var(--text-secondary);
-  font-size: calc(var(--text-support) + 0.0625rem);
+  font-size: var(--text-emphasis);
   line-height: 1.6;
 }
 
@@ -354,7 +356,7 @@
 
 .capabilities-section .section-intro {
   align-self: center;
-  font-size: calc(var(--text-sm) + 0.125rem);
+  font-size: var(--text-emphasis);
 }
 
 .capability-grid {
@@ -757,7 +759,7 @@
   border-bottom: 1px solid var(--dark-separator);
   color: var(--dark-surface-secondary);
   font-family: var(--sans);
-  font-size: var(--text-body);
+  font-size: var(--text-emphasis);
 }
 
 /* Academic background */
@@ -779,6 +781,10 @@
 .education-grid > div {
   padding-top: var(--space-5);
   border-top: 1px solid var(--separator);
+}
+
+.education-grid > div:last-child {
+  padding-left: max(0px, calc(100% - 30rem));
 }
 
 .education-grid h3 {
