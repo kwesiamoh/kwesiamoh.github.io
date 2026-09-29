@@ -66,12 +66,8 @@
         <p class="section-kicker" data-reveal>Projects</p>
         <div class="projects-hero-grid">
           <h1 id="projects-title" data-reveal>
-            Engineering problems,<br><em>examined at different scales.</em>
+            Engineering projects across<br> <em>process systems, CFD, energy and data.</em>
           </h1>
-          <p class="section-intro" data-reveal>
-            From plant-level systems and industrial data to multiphase flow,
-            atmospheric transport, energy forecasting, and emissions monitoring.
-          </p>
         </div>
 
         <nav class="project-index" aria-label="Project index" data-reveal>
@@ -168,28 +164,24 @@
             <h3>Enterprise Manufacturing Intelligence Platform</h3>
 
             <p class="project-lead">
-              A six-site manufacturing intelligence platform that brings production, downtime, energy, quality,
-              maintenance, and equipment telemetry into one decision layer, combining OEE and loss analysis with
-              forecasting, anomaly detection, and predictive maintenance.
+              A manufacturing intelligence system integrating production, downtime, energy, quality, maintenance and
+              equipment telemetry across a six-site, 30-line operating model.
             </p>
 
             <div class="project-detail">
               <div>
-                <span class="detail-label">Engineering Problem</span>
+                <span class="detail-label">Engineering Question</span>
                 <p>
-                  Multi-site operations generate millions of records across systems built for different purposes, time
-                  scales, and KPI definitions. The challenge was to reconcile them into a trusted enterprise model where
-                  performance, losses, energy use, reliability, and data quality could be compared consistently across
-                  sites and production lines.
+                  How can operational data with different time scales, structures and KPI definitions be brought into
+                  one consistent model for comparing plant and enterprise performance?
                 </p>
               </div>
               <div>
-                <span class="detail-label">Approach</span>
+                <span class="detail-label">Approach &amp; Output</span>
                 <p>
-                  Built a governed Python and PostgreSQL data platform with Power BI reporting and AWS-ready
-                  infrastructure. The platform integrates enterprise operations with industrial reference data, adds
-                  automated data-quality controls, and extends historical performance analysis into forecasting,
-                  anomaly detection, and early-warning analytics.
+                  Python pipelines and PostgreSQL provide a governed analytical layer for production, quality, energy,
+                  maintenance and reliability data. Power BI views connect OEE, losses, energy intensity, downtime,
+                  quality and maintenance performance at site and line level.
                 </p>
               </div>
             </div>
@@ -197,7 +189,7 @@
             <div class="project-footer">
               <div class="project-tech">Python · PostgreSQL · Power BI · AWS · Terraform</div>
               <a href="https://github.com/kwesiamoh/manufacturing-intelligence-platform" target="_blank"
-                rel="noopener noreferrer" class="text-link">View project<span class="external-link-icon" aria-hidden="true"></span></a>
+                rel="noopener noreferrer" class="text-link">View repository<span class="external-link-icon" aria-hidden="true"></span></a>
             </div>
           </div>
         </article>
@@ -258,26 +250,24 @@
             <h3>Multiphase Aeration Hydrodynamics &amp; Treatment Performance</h3>
 
             <p class="project-lead">
-              A multiphase CFD study showing how diffuser placement changes circulation, gas distribution, oxygen
-              transfer, dissolved oxygen, and biodegradable substrate removal, even when total airflow is held
-              constant.
+              A multiphase CFD study of how diffuser layout affects circulation, gas distribution, oxygen transfer and
+              treatment conditions in an activated-sludge aeration tank.
             </p>
 
             <div class="project-detail">
               <div>
-                <span class="detail-label">Engineering Problem</span>
+                <span class="detail-label">Engineering Question</span>
                 <p>
-                  The same aeration rate does not guarantee the same treatment conditions. Diffuser layout can create
-                  uneven circulation, oxygen-transfer zones, and low-DO regions that directly affect biological
-                  treatment performance.
+                  How does diffuser arrangement influence mixing and dissolved-oxygen distribution when tank geometry,
+                  hydraulics and total airflow remain unchanged?
                 </p>
               </div>
               <div>
-                <span class="detail-label">Approach</span>
+                <span class="detail-label">Approach &amp; Output</span>
                 <p>
-                  Compared distributed, central, and lateral diffuser layouts under identical tank geometry,
-                  hydraulics, and total airflow. Time-averaged multiphase aeration fields were coupled with a reduced
-                  ASM1 formulation to evaluate dissolved oxygen and biodegradable substrate reduction.
+                  Three diffuser layouts were compared using Euler&ndash;Euler multiphase CFD and a reduced aerobic
+                  carbon-removal model. The analysis examined flow structure, oxygen-transfer behaviour, DO uniformity
+                  and biodegradable substrate removal, with the distributed layout producing the most uniform DO field.
                 </p>
               </div>
             </div>
@@ -285,7 +275,7 @@
             <div class="project-footer">
               <div class="project-tech">OpenFOAM · Multiphase Flow · Aeration · ParaView</div>
               <a href="https://github.com/kwesiamoh/wastewater-aeration-cfd" target="_blank" rel="noopener noreferrer"
-                class="text-link">View project<span class="external-link-icon" aria-hidden="true"></span></a>
+                class="text-link">View repository<span class="external-link-icon" aria-hidden="true"></span></a>
             </div>
           </div>
         </article>
@@ -359,26 +349,25 @@
             <h3>Atmospheric Pollutant Dispersion</h3>
 
             <p class="project-lead">
-              Site-resolved CFD investigation of atmospheric pollutant
-              dispersion under varying meteorological conditions across
-              realistic terrain, buildings and industrial structures.
+              A CFD investigation of pollutant transport through a terrain- and building-resolved industrial site
+              under different atmospheric conditions.
             </p>
 
             <div class="project-detail">
               <div>
-                <span class="detail-label">Engineering Problem</span>
+                <span class="detail-label">Engineering Question</span>
                 <p>
-                  Wind direction, atmospheric flow and building wakes
-                  influence plume transport, recirculation, dilution
-                  and local pollutant concentration.
+                  How do wind speed, wind direction and building-induced flow structures affect plume transport,
+                  dilution and local pollutant concentrations?
                 </p>
               </div>
               <div>
-                <span class="detail-label">Approach</span>
+                <span class="detail-label">Approach &amp; Output</span>
                 <p>
-                  Combined terrain and building geometry with atmospheric
-                  boundary-layer simulations, Eulerian concentration fields
-                  and Lagrangian particle transport.
+                  Atmospheric-boundary-layer and LES-based simulations were used with terrain, buildings and plant
+                  geometry to examine plume routing and receptor response. The analysis compared concentration fields,
+                  particle transport and plume behaviour across controlled wind scenarios, including a prevailing-wind
+                  case derived from DWD data.
                 </p>
               </div>
             </div>
@@ -386,7 +375,7 @@
             <div class="project-footer">
               <div class="project-tech">OpenFOAM · RANS / LES · QGIS · ParaView · Blender</div>
               <a href="https://github.com/kwesiamoh/Fichtenhain-Atmospheric-Dispersion-CFD" target="_blank"
-                rel="noopener noreferrer" class="text-link">View project<span class="external-link-icon" aria-hidden="true"></span></a>
+                rel="noopener noreferrer" class="text-link">View repository<span class="external-link-icon" aria-hidden="true"></span></a>
             </div>
           </div>
         </article>
@@ -457,26 +446,25 @@
             <h3>German Grid Demand &amp; Carbon Intensity Forecasting</h3>
 
             <p class="project-lead">
-              A multi-horizon forecasting study of the German electricity system, using power-system and weather data
-              to forecast grid demand, renewable generation, and carbon intensity across a 24-hour horizon.
+              An energy-system forecasting study comparing several time-series approaches for German electricity
+              demand, renewable generation and carbon intensity over a 24-hour horizon.
             </p>
 
             <div class="project-detail">
               <div>
-                <span class="detail-label">Forecasting Problem</span>
+                <span class="detail-label">Engineering Question</span>
                 <p>
-                  Electricity demand, renewable generation, and carbon intensity evolve differently with weather,
-                  generation mix, and recurring system behavior. The challenge was to compare forecasting approaches
-                  consistently while preserving temporal causality and understanding how accuracy changes as the
-                  prediction horizon extends.
+                  How effectively can different forecasting approaches capture demand, renewable generation and
+                  carbon-intensity behaviour while preserving the temporal structure of the electricity system?
                 </p>
               </div>
               <div>
-                <span class="detail-label">Approach</span>
+                <span class="detail-label">Approach &amp; Output</span>
                 <p>
-                  Built an end-to-end hourly forecasting pipeline from OPSD, SMARD, and Meteostat data, then compared
-                  seasonal baselines, SARIMA, recursive XGBoost, and zero-shot Chronos, TimesFM, and Moirai across nine
-                  targets.
+                  OPSD, SMARD and Meteostat data were combined in an hourly modelling pipeline and evaluated
+                  chronologically across nine targets. Statistical, machine-learning and zero-shot forecasting models
+                  were compared using common forecast origins, producing load, generation and production-based
+                  carbon-intensity estimates together with horizon-wise error analysis.
                 </p>
               </div>
             </div>
@@ -484,7 +472,7 @@
             <div class="project-footer">
               <div class="project-tech">Python · XGBoost · Chronos · TimesFM · Moirai</div>
               <a href="https://github.com/kwesiamoh/energy-forecast" target="_blank" rel="noopener noreferrer"
-                class="text-link">View project<span class="external-link-icon" aria-hidden="true"></span></a>
+                class="text-link">View repository<span class="external-link-icon" aria-hidden="true"></span></a>
             </div>
           </div>
         </article>
@@ -533,24 +521,25 @@
             <h3>Virtual Soft-Sensor for Turbine Emissions Monitoring</h3>
 
             <p class="project-lead">
-              A physics-constrained soft sensor for estimating CO and NOx from operating telemetry when direct exhaust
-              measurements become unavailable or unreliable.
+              A data-driven soft sensor for estimating CO and NOx from gas-turbine operating telemetry when direct
+              exhaust measurements are unavailable.
             </p>
 
             <div class="project-detail">
               <div>
-                <span class="detail-label">Engineering Problem</span>
+                <span class="detail-label">Engineering Question</span>
                 <p>
-                  Calibration drift, analyzer maintenance, and measurement interruptions can create blind spots in
-                  emissions monitoring while the turbine continues operating.
+                  Can routine turbine operating data provide useful estimates of emissions when direct measurement is
+                  interrupted or unavailable?
                 </p>
               </div>
               <div>
-                <span class="detail-label">Approach</span>
+                <span class="detail-label">Approach &amp; Output</span>
                 <p>
-                  Developed an uncertainty-aware neural soft sensor combining physics-constrained modelling,
-                  thermodynamically motivated features, and conformal prediction to estimate emissions from existing
-                  operational variables while quantifying prediction uncertainty.
+                  Thermodynamically informed features were used with XGBoost and a physics-constrained multi-task neural
+                  model, while conformal methods provided prediction intervals. The project produced comparative model
+                  results and an operator-oriented monitoring dashboard using turbine operating and ambient-condition
+                  data. The prototype was developed and evaluated using historical turbine data.
                 </p>
               </div>
             </div>
@@ -558,7 +547,7 @@
             <div class="project-footer">
               <div class="project-tech">Python · PyTorch · Thermodynamics · Streamlit</div>
               <a href="https://github.com/kwesiamoh/gas-turbine-digital-twin" target="_blank" rel="noopener noreferrer"
-                class="text-link">View project<span class="external-link-icon" aria-hidden="true"></span></a>
+                class="text-link">View repository<span class="external-link-icon" aria-hidden="true"></span></a>
             </div>
           </div>
         </article>
@@ -567,7 +556,6 @@
 
     <div class="projects-return section-pad-small">
       <div class="section-shell">
-        <p class="section-kicker">Continue exploring</p>
         <a class="text-link" href="../#profile">Return to the portfolio</a>
       </div>
     </div>

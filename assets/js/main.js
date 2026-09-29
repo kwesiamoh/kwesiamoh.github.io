@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
+  root.classList.add('has-js');
   const body = document.body;
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');

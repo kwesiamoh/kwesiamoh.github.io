@@ -24,7 +24,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/images/hero-process-plant.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-process-plant-960.webp" type="image/webp"
+    media="(max-width: 620px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-process-plant-1600.webp" type="image/webp"
+    media="(min-width: 621px) and (max-width: 899px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-process-plant-2560.webp" type="image/webp"
+    media="(min-width: 900px)" fetchpriority="high">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
@@ -56,7 +61,6 @@
     <ul class="nav-links" id="primary-links">
       <li><a href="#profile">Profile</a></li>
       <li><a href="#work">Work</a></li>
-      <li><a href="#toolkit">Toolkit</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -316,62 +320,34 @@
       </div>
     </section>
 
-    <section id="toolkit" class="toolkit-section section-pad">
-      <div class="section-shell">
-        <div class="section-heading-row">
-          <div data-reveal>
-            <p class="section-kicker light">03 / Technical Toolkit</p>
-            <h2>Methods first.<br>Software second.</h2>
-          </div>
-
-          <p class="section-intro" data-reveal>
-            Tools are selected according to the physical or operational
-            problem rather than treated as the engineering outcome.
-          </p>
+    <section class="approach-band" aria-labelledby="approach-title">
+      <div class="section-shell approach-band-grid">
+        <div data-reveal>
+          <p class="section-kicker light">03 / Focus</p>
+          <h2 id="approach-title">Four areas that<br>shape my work.</h2>
         </div>
 
-        <div class="toolkit-grid">
-          <div class="toolkit-group" data-reveal>
-            <span class="toolkit-index">01</span>
-            <h3>Process Engineering</h3>
-            <p>Process Simulation<br>Thermodynamics<br>Heat &amp; Mass Transfer<br>Reaction Engineering<br>Process
-              Optimization<br>Operating-Data Analysis</p>
-          </div>
-
-          <div class="toolkit-group" data-reveal>
-            <span class="toolkit-index">02</span>
-            <h3>Simulation</h3>
-            <p>Aspen Plus<br>OpenFOAM<br>CFD<br>Multiphase Flow<br>Turbulence Modelling<br>Atmospheric Dispersion</p>
-          </div>
-
-          <div class="toolkit-group" data-reveal>
-            <span class="toolkit-index">03</span>
-            <h3>Data &amp; Modelling</h3>
-            <p>Python<br>MATLAB<br>PyTorch<br>XGBoost<br>Scikit-Learn<br>Time-Series Forecasting</p>
-          </div>
-
-          <div class="toolkit-group" data-reveal>
-            <span class="toolkit-index">04</span>
-            <h3>Engineering Applications</h3>
-            <p>Plant Performance<br>Wastewater Systems<br>Emissions Monitoring<br>Air Quality<br>Energy
-              Systems<br>Carbon Capture</p>
-          </div>
-        </div>
+        <ul class="approach-list" data-reveal>
+          <li>Process Engineering</li>
+          <li>Simulation &amp; CFD</li>
+          <li>Data &amp; Modelling</li>
+          <li>Engineering Analysis</li>
+        </ul>
       </div>
     </section>
 
-    <section class="education-section section-pad-small">
+    <section class="education-section academic-background">
       <div class="section-shell">
+        <p class="section-kicker" data-reveal>Academic Background</p>
+
         <div class="education-grid">
           <div data-reveal>
-            <p class="section-kicker">Education</p>
             <h3>University of Stuttgart</h3>
             <p>MSc Candidate in Air Quality Control, Solid Waste and Wastewater Process Engineering</p>
             <span>2024 — Present</span>
           </div>
 
           <div data-reveal>
-            <p class="section-kicker">Foundation</p>
             <h3>Kwame Nkrumah University of Science &amp; Technology</h3>
             <p>BSc Chemical Engineering · First Class</p>
             <span>2016 — 2020</span>
@@ -385,16 +361,11 @@
       <div class="section-shell contact-grid">
         <div data-reveal>
           <p class="section-kicker light">04 / Contact</p>
-          <h2>Interested in engineering that connects models with real systems?</h2>
+          <h2>Let’s connect.</h2>
         </div>
 
         <div class="contact-copy" data-reveal>
-          <p>
-            I am interested in process, plant, simulation,
-            environmental, energy and industrial engineering roles
-            where process understanding and quantitative methods
-            can improve physical systems.
-          </p>
+          <p>Open to PhD research, engineering opportunities and technical collaboration.</p>
 
           <div class="contact-links">
             <a href="mailto:amohernest@gmail.com"><span>Email</span><span>amohernest@gmail.com<span class="external-link-icon" aria-hidden="true"></span></span></a>

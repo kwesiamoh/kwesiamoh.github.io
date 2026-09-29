@@ -159,11 +159,13 @@ em {
 }
 
 [data-reveal] {
-  opacity: 0;
+  opacity: 1;
+  transform: none;
+  transition: transform var(--duration-medium) var(--ease-out);
+}
+
+.has-js [data-reveal] {
   transform: translateY(14px);
-  transition:
-    opacity var(--duration-medium) var(--ease-out),
-    transform var(--duration-medium) var(--ease-out);
 }
 
 [data-reveal].is-visible {
@@ -185,7 +187,8 @@ em {
     transition-duration: 0.01ms !important;
   }
 
-  [data-reveal] {
+  [data-reveal],
+  .has-js [data-reveal] {
     opacity: 1;
     transform: none;
   }

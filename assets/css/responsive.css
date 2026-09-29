@@ -9,13 +9,11 @@
     gap: 1.8rem;
   }
 
-  .capability-grid,
-  .toolkit-grid {
+  .capability-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .capability-item:nth-child(2),
-  .toolkit-group:nth-child(2) {
+  .capability-item:nth-child(2) {
     border-right: 0;
   }
 
@@ -24,13 +22,7 @@
     border-top: 1px solid var(--separator);
   }
 
-  .toolkit-group:nth-child(3),
-  .toolkit-group:nth-child(4) {
-    border-top: 1px solid var(--dark-separator);
-  }
-
-  .capability-item:nth-child(3),
-  .toolkit-group:nth-child(3) {
+  .capability-item:nth-child(3) {
     padding-left: 0;
   }
 
@@ -51,6 +43,13 @@
   .projects-hero-grid {
     grid-template-columns: 1fr;
     align-items: start;
+  }
+}
+
+@media (max-width: 899px) {
+  .hero-bg {
+    background-image: url('../images/hero-process-plant.jpg');
+    background-image: image-set(url('../images/hero-process-plant-1600.webp') type("image/webp") 1x);
   }
 }
 
@@ -247,6 +246,11 @@
     --text-hero: clamp(2.25rem, calc(1.107rem + 5.714vw), 2.5rem);
   }
 
+  .hero-bg {
+    background-image: url('../images/hero-process-plant.jpg');
+    background-image: image-set(url('../images/hero-process-plant-960.webp') type("image/webp") 1x);
+  }
+
   .nav-identity {
     justify-self: start;
     font-size: 0.6875rem;
@@ -306,8 +310,7 @@
     line-height: 1.52;
   }
 
-  .capability-grid,
-  .toolkit-grid {
+  .capability-grid {
     grid-template-columns: 1fr;
   }
 
@@ -330,6 +333,24 @@
     justify-content: flex-start;
   }
 
+  .approach-band {
+    padding-block: var(--space-8);
+  }
+
+  .approach-band::after {
+    display: none;
+  }
+
+  .approach-band-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .approach-list li {
+    min-height: 2.625rem;
+    padding-block: var(--space-2);
+  }
+
   .projects-hero {
     padding-top: calc(var(--nav-height) + var(--space-12));
   }
@@ -350,13 +371,9 @@
   }
 
   .capability-item,
-  .toolkit-group,
   .capability-item:first-child,
-  .toolkit-group:first-child,
   .capability-item:nth-child(3),
-  .toolkit-group:nth-child(3),
-  .capability-item:last-child,
-  .toolkit-group:last-child {
+  .capability-item:last-child {
     min-height: auto;
     padding: 1.75rem 0;
     border-right: 0;
@@ -366,21 +383,8 @@
     border-top: 1px solid var(--separator);
   }
 
-  .toolkit-group:not(:first-child) {
-    border-top: 1px solid var(--dark-separator);
-  }
-
-  .capability-number,
-  .toolkit-index {
+  .capability-number {
     margin-bottom: 2rem;
-  }
-
-  .toolkit-group {
-    grid-template-rows: auto auto auto;
-  }
-
-  .toolkit-group h3 {
-    min-height: 0;
   }
 
   .capability-item p,
@@ -398,14 +402,6 @@
 
   .project-lead {
     line-height: 1.52;
-  }
-
-  .toolkit-group p {
-    line-height: 1.68;
-  }
-
-  .education-grid h3 {
-    font-size: var(--text-card-title);
   }
 
   .project-media {

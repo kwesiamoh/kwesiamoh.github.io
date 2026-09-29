@@ -218,6 +218,7 @@
   position: absolute;
   inset: -4%;
   background: url('../images/hero-process-plant.jpg') center / cover no-repeat;
+  background-image: image-set(url('../images/hero-process-plant-2560.webp') type("image/webp") 1x);
   transform: translate3d(0, var(--hero-shift, 0px), 0) scale(1.04);
   will-change: transform;
 }
@@ -421,8 +422,13 @@
 }
 
 /* Work */
-.work-section {
+.work-section,
+.education-section {
   background: var(--surface-elevated);
+}
+
+.selected-work-section {
+  padding-bottom: clamp(2.5rem, 4vw, 3.75rem);
 }
 
 .work-heading {
@@ -700,67 +706,68 @@
   margin-inline: clamp(-1rem, -2vw, -2rem) 0;
 }
 
-/* Toolkit */
-.toolkit-section {
+/* Compact approach transition */
+.approach-band {
   position: relative;
-  background: var(--green);
+  padding-block: clamp(3.5rem, 5vw, 4.5rem);
+  overflow: hidden;
+  background: var(--dark-surface);
   color: var(--dark-surface-text);
 }
 
-.toolkit-section .section-intro {
-  color: var(--dark-surface-secondary);
+.approach-band::after {
+  content: 'III';
+  position: absolute;
+  z-index: 0;
+  right: clamp(-1.5rem, -1vw, -0.5rem);
+  bottom: -0.08em;
+  color: var(--dark-surface-text);
+  font-family: var(--serif);
+  font-size: clamp(12rem, 20vw, 20rem);
+  line-height: 0.75;
+  letter-spacing: -0.08em;
+  opacity: 0.05;
+  pointer-events: none;
+  user-select: none;
 }
 
-.toolkit-grid {
+.approach-band-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-block: 1px solid var(--dark-separator);
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: var(--grid-gap);
+  align-items: end;
 }
 
-.toolkit-group {
-  min-height: clamp(19rem, 26vw, 25rem);
-  display: grid;
-  grid-template-rows: auto auto 1fr;
-  align-content: start;
-  padding: clamp(1.5rem, 2.5vw, 2.25rem);
-  border-right: 1px solid var(--dark-separator);
+.approach-band h2 {
+  max-width: 12ch;
 }
 
-.toolkit-group:first-child {
-  padding-left: 0;
+.approach-list {
+  list-style: none;
+  border-top: 1px solid var(--dark-separator);
 }
 
-.toolkit-group:last-child {
-  padding-right: 0;
-  border-right: 0;
-}
-
-.toolkit-index {
-  display: block;
-  margin-bottom: clamp(3rem, 6vw, 5.5rem);
-  font-family: var(--mono);
-  font-size: var(--text-xs);
-  color: var(--accent-decorative-soft);
-}
-
-.toolkit-group h3 {
-  min-height: 2.1em;
+.approach-list li {
+  min-height: 3rem;
   display: flex;
   align-items: center;
-  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
-  font-size: var(--text-card-title);
-}
-
-.toolkit-group p {
-  font-family: var(--mono);
-  font-size: var(--text-compact);
-  line-height: 1.82;
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--dark-separator);
   color: var(--dark-surface-secondary);
+  font-family: var(--sans);
+  font-size: var(--text-body);
 }
 
-/* Education */
-.education-section {
-  background: var(--surface-secondary);
+/* Academic background */
+.academic-background {
+  padding-block: 0 clamp(2.25rem, 4vw, 3.5rem);
+}
+
+.academic-background .section-shell {
+  padding-top: clamp(1.75rem, 3vw, 2.5rem);
+  border-top: 1px solid var(--separator);
 }
 
 .education-grid {
@@ -770,26 +777,26 @@
 }
 
 .education-grid > div {
-  padding-top: clamp(1.5rem, 3vw, 2.4rem);
+  padding-top: var(--space-5);
   border-top: 1px solid var(--separator);
 }
 
 .education-grid h3 {
   max-width: 30rem;
-  margin-bottom: 1rem;
-  font-size: clamp(1.7rem, 1.25rem + 1.05vw, 2.4rem);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-card-title);
 }
 
 .education-grid p {
   max-width: 34rem;
   color: var(--text-secondary);
   font-size: var(--text-sm);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .education-grid span {
   display: block;
-  margin-top: 1.25rem;
+  margin-top: var(--space-3);
   font-family: var(--mono);
   font-size: var(--text-xs);
   color: var(--accent-functional);
